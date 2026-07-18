@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="top" className="container-page pt-16 pb-24 md:pt-24 md:pb-32">
-      <div className="grid gap-12 md:grid-cols-2 md:items-center">
+    <section id="top" className="container-page flex min-h-[calc(100vh-4rem)] items-center py-8">
+      <div className="grid w-full gap-12 md:grid-cols-2 md:items-center">
         <div className="fade-up order-1 md:order-1">
           <p className="text-xl text-muted-foreground md:text-2xl">
             Hi there, my name is
