@@ -52,7 +52,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="rounded-xl bg-primary px-6 text-primary-foreground hover:bg-primary/90"
+              className="rounded-xl bg-primary px-8 py-4 text-base text-primary-foreground hover:bg-primary/90"
             >
               <a href="#" target="_blank" rel="noreferrer">
                 View Resume
