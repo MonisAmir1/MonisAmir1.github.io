@@ -1,4 +1,19 @@
 import { Section } from "./Section";
+import excelAsset from "@/assets/skill-excel.png.asset.json";
+import sqlAsset from "@/assets/skill-sql.png.asset.json";
+import powerbiAsset from "@/assets/skill-powerbi.png.asset.json";
+import tableauAsset from "@/assets/skill-tableau.png.asset.json";
+import powerautomateAsset from "@/assets/skill-powerautomate.png.asset.json";
+import aiAsset from "@/assets/skill-ai.png.asset.json";
+
+const tools = [
+  { name: "Excel", src: excelAsset.url },
+  { name: "SQL", src: sqlAsset.url },
+  { name: "Power BI", src: powerbiAsset.url },
+  { name: "Tableau", src: tableauAsset.url },
+  { name: "Power Automate", src: powerautomateAsset.url },
+  { name: "AI", src: aiAsset.url },
+];
 
 const groups = [
   {
@@ -23,6 +38,17 @@ const groups = [
 export function Skills() {
   return (
     <Section id="skills" title="Skills">
+      <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        {tools.map((t) => (
+          <img
+            key={t.name}
+            src={t.src}
+            alt={t.name}
+            title={t.name}
+            className="h-14 w-auto object-contain md:h-16"
+          />
+        ))}
+      </div>
       <div className="grid gap-8 md:grid-cols-3">
         {groups.map((g) => (
           <div key={g.title} className="card-surface card-hover">
