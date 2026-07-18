@@ -1,35 +1,40 @@
-import { Github, Linkedin, Mail, BarChart3 } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import kaggleLogo from "@/assets/kaggle.png.asset.json";
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-background py-12">
       <div className="container-page flex flex-col items-center justify-center gap-6">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <a
             href="#"
             aria-label="LinkedIn"
-            className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:text-primary"
+            className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
             <Linkedin className="h-4 w-4" />
           </a>
           <a
             href="#"
             aria-label="GitHub"
-            className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:text-primary"
+            className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
             <Github className="h-4 w-4" />
           </a>
           <a
             href="#"
             aria-label="Kaggle"
-            className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:text-primary"
+            className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:shadow-md"
           >
-            <BarChart3 className="h-4 w-4" />
+            <img
+              src={kaggleLogo.url}
+              alt=""
+              className="h-4 w-4 object-contain transition-[filter] group-hover:brightness-0 group-hover:invert"
+            />
           </a>
           <a
             href="#contact"
             aria-label="Email"
-            className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-foreground transition-colors hover:text-primary"
+            className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
             <Mail className="h-4 w-4" />
           </a>
