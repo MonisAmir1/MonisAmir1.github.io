@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, BarChart3 } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import kaggleLogo from "@/assets/kaggle.png.asset.json";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
