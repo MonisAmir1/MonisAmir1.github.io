@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
+import profileImage from "@/assets/profile-navbar.png.asset.json";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
 const links = [
