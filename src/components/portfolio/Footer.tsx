@@ -34,6 +34,7 @@ export function Footer() {
             <Mail className="h-4 w-4" />
           </a>
         </div>
+        <p className="text-sm text-muted-foreground">© 2026 Muhammad Monis</p>
       </div>
     </footer>
   );
