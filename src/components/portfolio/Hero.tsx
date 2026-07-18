@@ -6,7 +6,7 @@ export function Hero() {
     <section id="top" className="container-page pt-16 pb-24 md:pt-24 md:pb-32">
       <div className="grid gap-12 md:grid-cols-2 md:items-center">
         <div className="fade-up order-1 md:order-1">
-          <p className="text-base text-muted-foreground md:text-lg">
+          <p className="text-lg text-muted-foreground md:text-xl">
             Hi there, my name is
           </p>
           <h1 className="mt-3 text-5xl leading-[1.05] text-foreground md:text-6xl lg:text-[64px]">
