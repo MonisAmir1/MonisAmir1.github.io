@@ -3,8 +3,7 @@ import { Github, Linkedin, Mail, BarChart3 } from "lucide-react";
 export function Footer() {
   return (
     <footer className="border-t border-border bg-background py-12">
-      <div className="container-page flex flex-col items-center justify-between gap-6 md:flex-row">
-        <p className="text-sm text-muted-foreground">© 2026 Muhammad Monis</p>
+      <div className="container-page flex flex-col items-center justify-center gap-6">
         <div className="flex items-center gap-3">
           <a
             href="#"
