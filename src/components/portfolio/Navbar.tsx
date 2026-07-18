@@ -41,10 +41,10 @@ export function Navbar() {
       <nav className="container-page flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
           <span className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-sm font-semibold text-foreground">
-            MM
+            MP
           </span>
           <span className="text-sm font-semibold tracking-tight text-foreground">
-            Muhammad Monis
+            Monis Portfolio
           </span>
         </a>
 
