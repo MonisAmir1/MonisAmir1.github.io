@@ -7,7 +7,7 @@ export function Certifications() {
     <Section
       id="certifications"
       title="Professional Certifications"
-      description="A growing list of proprietary, exam-based certifications."
+      description="List of proprietary, exam-based certifications."
     >
       <div className="grid gap-6 md:grid-cols-2">
         {items.map((_, i) => (
