@@ -18,7 +18,7 @@ const tools = [
 const groups = [
   {
     title: "Analytics",
-    items: ["SQL", "Excel", "Power BI"],
+    items: ["SQL", "Excel", "Power BI", "AI Automation"],
   },
   {
     title: "Business",
