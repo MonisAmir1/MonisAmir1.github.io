@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import kaggleLogo from "@/assets/kaggle.png.asset.json";
+import { KaggleIcon } from "@/components/portfolio/KaggleIcon";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
@@ -36,13 +36,9 @@ export function Hero() {
             <a
               href="#"
               aria-label="Kaggle"
-              className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:shadow-md"
+              className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
-              <img
-                src={kaggleLogo.url}
-                alt=""
-                className="h-[18px] w-[18px] object-contain grayscale opacity-60 transition-all group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert"
-              />
+              <KaggleIcon className="h-[18px] w-[18px]" />
             </a>
             <a
               href="#contact"
