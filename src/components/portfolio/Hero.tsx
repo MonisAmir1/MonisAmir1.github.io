@@ -41,7 +41,7 @@ export function Hero() {
               <img
                 src={kaggleLogo.url}
                 alt=""
-                className="h-[18px] w-[18px] object-contain transition-[filter] group-hover:brightness-0 group-hover:invert"
+                className="h-[18px] w-[18px] object-contain grayscale opacity-60 transition-all group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert"
               />
             </a>
             <a

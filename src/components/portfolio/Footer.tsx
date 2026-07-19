@@ -28,7 +28,7 @@ export function Footer() {
             <img
               src={kaggleLogo.url}
               alt=""
-              className="h-4 w-4 object-contain transition-[filter] group-hover:brightness-0 group-hover:invert"
+              className="h-4 w-4 object-contain grayscale opacity-60 transition-all group-hover:grayscale-0 group-hover:opacity-100 group-hover:brightness-0 group-hover:invert"
             />
           </a>
           <a
