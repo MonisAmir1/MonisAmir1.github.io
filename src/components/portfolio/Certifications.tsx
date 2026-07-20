@@ -32,20 +32,12 @@ export function Certifications() {
             key={i}
             className="card-surface card-hover flex items-center gap-6"
           >
-            <div
-              className={`grid h-20 w-20 shrink-0 place-items-center rounded-xl bg-surface ${
-                item.type === "badge" ? "" : "border border-border"
-              }`}
-            >
-              {item.type === "badge" ? (
-                <img
-                  src={msBadge.url}
-                  alt="Microsoft Certified Associate badge"
-                  className="h-[72px] w-[72px] object-contain"
-                />
-              ) : (
-                <Award className="h-8 w-8 text-primary" />
-              )}
+            <div className="grid h-20 w-20 shrink-0 place-items-center rounded-xl bg-surface">
+              <img
+                src={item.badge.url}
+                alt={item.badgeAlt}
+                className="h-[72px] w-[72px] object-contain"
+              />
             </div>
             <div>
               <h3 className="text-lg font-semibold text-foreground">
