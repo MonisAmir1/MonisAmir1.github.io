@@ -1,20 +1,22 @@
-import { Award } from "lucide-react";
 import { Section } from "./Section";
 import msBadge from "@/assets/microsoft-certified-associate-badge.png.asset.json";
+import captureBadge from "@/assets/capture-badge.png.asset.json";
 
 export function Certifications() {
   const items = [
     {
-      type: "badge",
       name: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
       issuer: "Microsoft · 2026",
       issuerUrl:
         "https://learn.microsoft.com/api/credentials/share/en-us/MuhammadMonis/546609693FDEE7FF?sharingId=3971E2623D29B08F",
+      badge: msBadge,
+      badgeAlt: "Microsoft Certified Associate badge",
     },
     {
-      type: "placeholder",
       name: "Certification Name",
       issuer: "Issuing Organization · Year",
+      badge: captureBadge,
+      badgeAlt: "Certification badge",
     },
   ];
 
