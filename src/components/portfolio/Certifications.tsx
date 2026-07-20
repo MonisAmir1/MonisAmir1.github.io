@@ -9,7 +9,7 @@ export function Certifications() {
       title="Professional Certifications"
       description="List of proprietary, exam-based certifications."
     >
-      <div className="flex flex-col gap-6 max-w-xl mx-auto">
+      <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto">
         {items.map((_, i) => (
           <div
             key={i}
