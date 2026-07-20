@@ -2,14 +2,14 @@ import { Award } from "lucide-react";
 import { Section } from "./Section";
 
 export function Certifications() {
-  const items = Array.from({ length: 4 });
+  const items = Array.from({ length: 2 });
   return (
     <Section
       id="certifications"
       title="Professional Certifications"
       description="List of proprietary, exam-based certifications."
     >
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="flex flex-col gap-6 max-w-xl mx-auto">
         {items.map((_, i) => (
           <div
             key={i}
