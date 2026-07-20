@@ -8,6 +8,8 @@ export function Certifications() {
       type: "badge",
       name: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
       issuer: "Microsoft · 2026",
+      issuerUrl:
+        "https://learn.microsoft.com/api/credentials/share/en-us/MuhammadMonis/546609693FDEE7FF?sharingId=3971E2623D29B08F",
     },
     {
       type: "placeholder",
@@ -48,7 +50,18 @@ export function Certifications() {
                 {item.name}
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                {item.issuer}
+                {item.issuerUrl ? (
+                  <a
+                    href={item.issuerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="italic underline hover:text-primary"
+                  >
+                    {item.issuer}
+                  </a>
+                ) : (
+                  item.issuer
+                )}
               </p>
             </div>
           </div>
