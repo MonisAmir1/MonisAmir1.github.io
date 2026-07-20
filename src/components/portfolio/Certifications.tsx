@@ -25,7 +25,7 @@ export function Certifications() {
                 <img
                   src={msBadge.url}
                   alt="Microsoft Certified Associate badge"
-                  className="h-16 w-16 object-contain"
+                  className="h-[72px] w-[72px] object-contain"
                 />
               ) : (
                 <Award className="h-8 w-8 text-primary" />
