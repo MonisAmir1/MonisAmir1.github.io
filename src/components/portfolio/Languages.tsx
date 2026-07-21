@@ -31,7 +31,7 @@ export function Languages() {
                   key={f.alt}
                   src={f.src}
                   alt={f.alt}
-                  className="inline-block h-[1em] w-auto align-[-0.1em]"
+                  className="inline-block h-[1.15em] w-auto align-[-0.1em]"
                 />
               ))}
             </h3>
