@@ -10,7 +10,7 @@ export function Projects() {
       title="Featured Projects"
       description="Selected case studies demonstrating analytical thinking and business impact."
     >
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-2">
         {cards.map((_, i) => (
           <article
             key={i}
