@@ -7,6 +7,7 @@ export function Section({
   description,
   children,
   reading = false,
+  flushTop = false,
 }: {
   id: string;
   eyebrow?: string;
@@ -14,9 +15,14 @@ export function Section({
   description?: string;
   children: ReactNode;
   reading?: boolean;
+  flushTop?: boolean;
 }) {
   return (
-    <section id={id} className="border-t border-border bg-background py-24 md:py-32">
+    <section
+      id={id}
+      className={`bg-background py-20 md:py-24 ${flushTop ? "" : "border-t border-border"}`}
+    >
+
       <div className={reading ? "container-reading" : "container-page"}>
         <header className="mb-12 text-center md:mb-16">
           {eyebrow && (
