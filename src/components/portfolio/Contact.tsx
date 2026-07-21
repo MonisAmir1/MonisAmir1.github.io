@@ -36,7 +36,7 @@ export function Contact() {
   };
 
   return (
-    <Section id="contact" title="Contact Me" reading>
+    <Section id="contact" title="Contact Me" reading flushTop>
       <div className="card-surface">
         <Form {...form}>
           <form
