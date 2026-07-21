@@ -8,7 +8,7 @@ const langs = [
 export function Languages() {
   return (
     <Section id="languages" title="Languages">
-      <div className="mx-auto grid w-full max-w-2xl grid-cols-2 gap-4 sm:gap-6">
+      <div className="mx-auto grid w-full max-w-3xl grid-cols-2 gap-4 sm:gap-6">
         {langs.map((l) => (
           <div
             key={l.name}
