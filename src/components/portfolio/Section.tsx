@@ -20,8 +20,9 @@ export function Section({
   return (
     <section
       id={id}
-      className={`bg-background py-20 md:py-24 ${flushTop ? "" : "border-t border-border"}`}
+      className={`bg-background ${flushTop ? "pt-8 md:pt-10 pb-20 md:pb-24" : "border-t border-border py-20 md:py-24"}`}
     >
+
 
       <div className={reading ? "container-reading" : "container-page"}>
         <header className="mb-12 text-center md:mb-16">
