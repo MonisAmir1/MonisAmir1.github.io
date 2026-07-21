@@ -13,7 +13,7 @@ export function Certifications() {
       badgeAlt: "Microsoft Certified Associate badge",
     },
     {
-      name: "SQL Advanced",
+      name: "SQL (Advanced)",
       issuer: "HackerRank · 2026",
       issuerUrl: "https://www.hackerrank.com/certificates/b4a83cf7e0f6",
       badge: captureBadge,
