@@ -7,28 +7,34 @@ export function Footer() {
       <div className="container-page flex flex-col items-center justify-center gap-6">
         <div className="flex items-center gap-2">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/muhammad-monis/"
+            target="_blank"
+            rel="noreferrer"
             aria-label="LinkedIn"
             className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
             <Linkedin className="h-4 w-4" />
           </a>
           <a
-            href="#"
+            href="https://github.com/MonisAmir1?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
             aria-label="GitHub"
             className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
             <Github className="h-4 w-4" />
           </a>
-            <a
-              href="#"
-              aria-label="Kaggle"
-              className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
-            >
-              <KaggleIcon className="h-4 w-4" />
-            </a>
           <a
-            href="#contact"
+            href="https://www.kaggle.com/monisamir"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Kaggle"
+            className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
+          >
+            <KaggleIcon className="h-4 w-4" />
+          </a>
+          <a
+            href="mailto:monisaamir5@gmail.com"
             aria-label="Email"
             className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
