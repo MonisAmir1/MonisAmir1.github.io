@@ -20,28 +20,34 @@ export function Hero() {
 
           <div className="mt-8 flex items-center gap-2">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/muhammad-monis/"
+              target="_blank"
+              rel="noreferrer"
               aria-label="LinkedIn"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
               <Linkedin className="h-[18px] w-[18px]" />
             </a>
             <a
-              href="#"
+              href="https://github.com/MonisAmir1?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
               aria-label="GitHub"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
               <Github className="h-[18px] w-[18px]" />
             </a>
             <a
-              href="#"
+              href="https://www.kaggle.com/monisamir"
+              target="_blank"
+              rel="noreferrer"
               aria-label="Kaggle"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
               <KaggleIcon className="h-[18px] w-[18px]" />
             </a>
             <a
-              href="#contact"
+              href="mailto:monisaamir5@gmail.com"
               aria-label="Email"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
