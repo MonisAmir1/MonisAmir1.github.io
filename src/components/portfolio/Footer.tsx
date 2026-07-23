@@ -9,7 +9,7 @@ export function Footer() {
           <a
             href="https://www.linkedin.com/in/muhammad-monis/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
@@ -18,7 +18,7 @@ export function Footer() {
           <a
             href="https://github.com/MonisAmir1?tab=repositories"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="GitHub"
             className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
@@ -27,7 +27,7 @@ export function Footer() {
           <a
             href="https://www.kaggle.com/monisamir"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             aria-label="Kaggle"
             className="group grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
           >
