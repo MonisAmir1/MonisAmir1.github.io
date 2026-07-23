@@ -22,7 +22,7 @@ export function Hero() {
             <a
               href="https://www.linkedin.com/in/muhammad-monis/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
@@ -31,7 +31,7 @@ export function Hero() {
             <a
               href="https://github.com/MonisAmir1?tab=repositories"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
@@ -40,7 +40,7 @@ export function Hero() {
             <a
               href="https://www.kaggle.com/monisamir"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label="Kaggle"
               className="group grid h-11 w-11 place-items-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-md"
             >
@@ -62,7 +62,7 @@ export function Hero() {
               size="lg"
               className="rounded-xl bg-primary px-8 py-4 text-base text-primary-foreground hover:bg-primary/90"
             >
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 View Resume
               </a>
             </Button>
