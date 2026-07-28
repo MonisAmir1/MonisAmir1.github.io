@@ -7,19 +7,18 @@ export function Hero() {
     <section id="top" className="container-page flex min-h-[calc(100vh-4rem)] items-center py-8">
       <div className="grid w-full gap-12 md:grid-cols-2 md:items-center">
         <div className="fade-up order-1 md:order-1">
-          <p className="text-xl text-muted-foreground md:text-2xl">
-            Hi there, my name is
-          </p>
-          <h1
-            className="mt-3 text-5xl leading-[1.05] text-foreground md:text-6xl lg:text-[64px]"
-            style={{ fontFamily: "'Agrandir', Inter, sans-serif" }}
-          >
-            Muhammad Monis
-          </h1>
-          <p className="mt-5 text-lg text-muted-foreground md:text-xl">
-            Data Analyst <span className="mx-2 text-border">|</span> Business
-            Intelligence Analyst
-          </p>
+          <div style={{ fontFamily: "'Agrandir', Inter, sans-serif" }}>
+            <p className="text-xl text-muted-foreground md:text-2xl">
+              Hi there, my name is
+            </p>
+            <h1 className="mt-3 text-5xl leading-[1.05] text-foreground md:text-6xl lg:text-[64px]">
+              Muhammad Monis
+            </h1>
+            <p className="mt-5 text-lg text-muted-foreground md:text-xl">
+              Data Analyst <span className="mx-2 text-border">|</span> Business
+              Intelligence Analyst
+            </p>
+          </div>
 
           <div className="mt-8 flex items-center gap-2">
             <a
