@@ -10,7 +10,10 @@ export function Hero() {
           <p className="text-xl text-muted-foreground md:text-2xl">
             Hi there, my name is
           </p>
-          <h1 className="mt-3 text-5xl leading-[1.05] text-foreground md:text-6xl lg:text-[64px]">
+          <h1
+            className="mt-3 text-5xl leading-[1.05] text-foreground md:text-6xl lg:text-[64px]"
+            style={{ fontFamily: "'Agrandir', Inter, sans-serif" }}
+          >
             Muhammad Monis
           </h1>
           <p className="mt-5 text-lg text-muted-foreground md:text-xl">
