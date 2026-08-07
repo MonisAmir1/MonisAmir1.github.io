@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Cost-to-Income Ratio Optimisation",
     industry: "BANKING | FINANCIAL SERVICES",
-    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    description: "Analysed the operational drivers behind an escalating Cost-to-Income Ratio and developed data-driven recommendations to improve banking efficiency.",
     tools: ["Tool", "Tool", "Tool"],
     thumbnail: dashboardThumb.url,
   },
