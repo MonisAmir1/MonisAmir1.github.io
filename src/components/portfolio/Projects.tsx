@@ -1,7 +1,9 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
 import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
+
 
 const projects = [
   {
