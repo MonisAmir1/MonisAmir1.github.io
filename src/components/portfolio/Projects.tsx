@@ -5,7 +5,7 @@ import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
 
 const projects = [
   {
-    title: "Project Title",
+    title: "Cost-to-Income Ratio Optimisation",
     industry: "BANKING | FINANCIAL SERVICES",
     description: "Short description of the project, the business problem addressed, and the outcome delivered.",
     tools: ["Tool", "Tool", "Tool"],
