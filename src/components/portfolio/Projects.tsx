@@ -3,8 +3,47 @@ import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
 import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
 
+const projects = [
+  {
+    title: "Project Title",
+    industry: "BANKING | FINANCIAL SERVICES",
+    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    tools: ["Tool", "Tool", "Tool"],
+    thumbnail: dashboardThumb.url,
+  },
+  {
+    title: "Project Title",
+    industry: "Industry",
+    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    tools: ["Tool", "Tool", "Tool"],
+  },
+  {
+    title: "Project Title",
+    industry: "Industry",
+    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    tools: ["Tool", "Tool", "Tool"],
+  },
+  {
+    title: "Project Title",
+    industry: "Industry",
+    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    tools: ["Tool", "Tool", "Tool"],
+  },
+  {
+    title: "Project Title",
+    industry: "Industry",
+    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    tools: ["Tool", "Tool", "Tool"],
+  },
+  {
+    title: "Project Title",
+    industry: "Industry",
+    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
+    tools: ["Tool", "Tool", "Tool"],
+  },
+];
+
 export function Projects() {
-  const cards = Array.from({ length: 6 });
   return (
     <Section
       id="projects"
@@ -12,33 +51,32 @@ export function Projects() {
       description="Selected case studies demonstrating analytical thinking and business impact."
     >
       <div className="grid gap-8 md:grid-cols-2">
-        {cards.map((_, i) => (
+        {projects.map((project, i) => (
           <article
             key={i}
             className="card-surface card-hover flex flex-col"
           >
             <div className="aspect-[1065/596] w-full overflow-hidden rounded-md border border-border bg-surface">
-              {i === 0 && (
+              {project.thumbnail && (
                 <img
-                  src={dashboardThumb.url}
-                  alt="Power BI dashboard showing operating income, cost breakdown and SLA variance metrics"
+                  src={project.thumbnail}
+                  alt={project.title}
                   loading="lazy"
                   className="h-full w-full object-cover object-left"
                 />
               )}
             </div>
             <p className="mt-6 text-xs font-medium uppercase tracking-[0.18em] text-primary">
-              Industry
+              {project.industry}
             </p>
             <h3 className="mt-2 text-xl font-semibold text-foreground">
-              Project Title
+              {project.title}
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Short description of the project, the business problem addressed,
-              and the outcome delivered.
+              {project.description}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {["Tool", "Tool", "Tool"].map((t, ix) => (
+              {project.tools.map((t, ix) => (
                 <span
                   key={ix}
                   className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground"
