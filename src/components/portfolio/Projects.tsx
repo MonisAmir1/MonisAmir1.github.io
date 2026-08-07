@@ -1,7 +1,9 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
 import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
+
 
 const projects = [
   {
@@ -10,7 +12,9 @@ const projects = [
     description: "Analysed the operational drivers behind an escalating Cost-to-Income Ratio and developed data-driven recommendations to improve banking efficiency.",
     tools: ["SQL", "Power BI"],
     thumbnail: dashboardThumb.url,
+    to: "/projects/cost-to-income-ratio" as const,
   },
+
   {
     title: "Project Title",
     industry: "Industry",
@@ -87,13 +91,25 @@ export function Projects() {
             </div>
             <div className="mt-8 pt-2">
               <Button
+                asChild={!!project.to}
                 variant="outline"
+                disabled={!project.to}
                 className="rounded-xl border-border bg-transparent text-foreground hover:bg-surface hover:text-primary"
               >
-                View Case Study
-                <ArrowRight className="ml-1.5 h-4 w-4" />
+                {project.to ? (
+                  <Link to={project.to}>
+                    View Case Study
+                    <ArrowRight className="ml-1.5 h-4 w-4" />
+                  </Link>
+                ) : (
+                  <span>
+                    View Case Study
+                    <ArrowRight className="ml-1.5 h-4 w-4" />
+                  </span>
+                )}
               </Button>
             </div>
+
           </article>
         ))}
       </div>

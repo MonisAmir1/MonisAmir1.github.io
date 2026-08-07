@@ -10,33 +10,44 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsCostToIncomeRatioRoute =
+  ProjectsCostToIncomeRatioRouteImport.update({
+    id: '/projects/cost-to-income-ratio',
+    path: '/projects/cost-to-income-ratio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/projects/cost-to-income-ratio'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/projects/cost-to-income-ratio'
+  id: '__root__' | '/' | '/projects/cost-to-income-ratio'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ProjectsCostToIncomeRatioRoute: typeof ProjectsCostToIncomeRatioRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +59,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/cost-to-income-ratio': {
+      id: '/projects/cost-to-income-ratio'
+      path: '/projects/cost-to-income-ratio'
+      fullPath: '/projects/cost-to-income-ratio'
+      preLoaderRoute: typeof ProjectsCostToIncomeRatioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ProjectsCostToIncomeRatioRoute: ProjectsCostToIncomeRatioRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
