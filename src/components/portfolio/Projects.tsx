@@ -12,7 +12,9 @@ const projects = [
     description: "Analysed the operational drivers behind an escalating Cost-to-Income Ratio and developed data-driven recommendations to improve banking efficiency.",
     tools: ["SQL", "Power BI"],
     thumbnail: dashboardThumb.url,
+    to: "/projects/cost-to-income-ratio" as const,
   },
+
   {
     title: "Project Title",
     industry: "Industry",
