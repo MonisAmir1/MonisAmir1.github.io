@@ -23,7 +23,7 @@ export function Projects() {
                   src={dashboardThumb.url}
                   alt="Power BI dashboard showing operating income, cost breakdown and SLA variance metrics"
                   loading="lazy"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-left"
                 />
               )}
             </div>
