@@ -91,13 +91,25 @@ export function Projects() {
             </div>
             <div className="mt-8 pt-2">
               <Button
+                asChild={!!project.to}
                 variant="outline"
+                disabled={!project.to}
                 className="rounded-xl border-border bg-transparent text-foreground hover:bg-surface hover:text-primary"
               >
-                View Case Study
-                <ArrowRight className="ml-1.5 h-4 w-4" />
+                {project.to ? (
+                  <Link to={project.to}>
+                    View Case Study
+                    <ArrowRight className="ml-1.5 h-4 w-4" />
+                  </Link>
+                ) : (
+                  <span>
+                    View Case Study
+                    <ArrowRight className="ml-1.5 h-4 w-4" />
+                  </span>
+                )}
               </Button>
             </div>
+
           </article>
         ))}
       </div>
