@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
+import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
 
 export function Projects() {
   const cards = Array.from({ length: 6 });
@@ -16,7 +17,16 @@ export function Projects() {
             key={i}
             className="card-surface card-hover flex flex-col"
           >
-            <div className="aspect-[16/10] w-full rounded-md border border-border bg-surface" />
+            <div className="aspect-[16/10] w-full overflow-hidden rounded-md border border-border bg-surface">
+              {i === 0 && (
+                <img
+                  src={dashboardThumb.url}
+                  alt="Power BI dashboard showing operating income, cost breakdown and SLA variance metrics"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              )}
+            </div>
             <p className="mt-6 text-xs font-medium uppercase tracking-[0.18em] text-primary">
               Industry
             </p>
