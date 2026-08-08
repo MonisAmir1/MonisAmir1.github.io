@@ -621,7 +621,7 @@ function CaseStudyPage() {
               className="inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-base text-primary-foreground transition-colors hover:bg-primary/90"
             >
               <ArrowLeft className="h-4 w-4" />
-              Back to Projects
+              Back to Portfolio
             </Link>
           </div>
         </CaseSection>
