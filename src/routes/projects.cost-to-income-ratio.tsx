@@ -244,7 +244,7 @@ function CaseStudyPage() {
         <CaseSection title="Business Context" reading>
           <Prose>
             <p>
-              ABC Banking Group is a mid-sized banking institution headquartered in Luxembourg,
+              <B>ABC Banking Group</B> is a mid-sized banking institution headquartered in Luxembourg,
               providing Retail Banking, Corporate Banking, Wealth &amp; Private Banking, Payments
               &amp; Transaction Operations, and Compliance &amp; Financial Crime services. Operating
               within Luxembourg, the bank must balance operational efficiency, regulatory
