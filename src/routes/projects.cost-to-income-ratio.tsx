@@ -337,7 +337,7 @@ function CaseStudyPage() {
               <p>
                 Management provided five years of historical operational and financial data covering
                 multiple departments and business processes. Rather than beginning with assumptions,
-                I followed a structured analytical approach that progressively narrowed the
+                I followed a <B>structured analytical approach</B> that progressively narrowed the
                 investigation from financial performance to operational root causes.
               </p>
             </Prose>
