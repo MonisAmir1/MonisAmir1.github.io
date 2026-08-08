@@ -372,10 +372,11 @@ function CaseStudyPage() {
                   The analysis began with a review of the bank's overall financial performance to
                   determine whether the escalation in the Cost-to-Income (C/I) Ratio was genuine and
                   to understand the financial trend behind it. The analysis confirmed that the C/I
-                  Ratio increased from 45.64% in 2021 to 57.13% in 2025, driven by a significant rise
-                  in operating expenses while operating income remained broadly stable. The most
-                  notable shift occurred between 2022 and 2023, marking the point at which
-                  operational costs began to outpace the bank's ability to generate income.
+                  Ratio increased from <B>45.64% in 2021</B> to <B>57.13% in 2025</B>, driven by a
+                  significant rise in operating expenses while operating income remained broadly
+                  stable. The most notable shift occurred between <B>2022 and 2023</B>, marking the
+                  point at which operational costs began to outpace the bank's ability to generate
+                  income.
                 </p>
               </Prose>
               <div className="mt-8">
