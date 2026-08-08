@@ -494,7 +494,7 @@ function CaseStudyPage() {
         {/* Strategic Recommendations */}
         <CaseSection title="Strategic Recommendations">
           <Prose>
-            <p>
+            <p className="text-center">
               The analysis identified three targeted operational improvements designed to address the
               root causes of rising costs. Rather than applying broad cost-cutting measures, the
               recommendations focus on eliminating process inefficiencies while maintaining service
@@ -570,7 +570,7 @@ function CaseStudyPage() {
         {/* Technical Implementations */}
         <CaseSection title="Technical Implementations">
           <Prose>
-            <p>
+            <p className="text-center">
               This project was designed to simulate a real-world business intelligence workflow,
               covering the complete analytical pipeline from relational data modelling to executive
               reporting.
