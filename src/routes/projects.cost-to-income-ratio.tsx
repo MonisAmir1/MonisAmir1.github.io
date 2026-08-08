@@ -271,7 +271,7 @@ function CaseStudyPage() {
         <CaseSection title="Why This Problem Matters" reading>
           <Prose>
             <p>
-              The Cost-to-Income Ratio is a key measure of operational efficiency within the banking
+              The <B>Cost-to-Income Ratio</B> is a key measure of operational efficiency within the banking
               industry. Without understanding the factors driving its escalation, management risks
               making decisions based on assumptions rather than evidence. Identifying the true
               operational drivers enables targeted improvements that strengthen efficiency, control
