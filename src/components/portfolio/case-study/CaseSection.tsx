@@ -32,7 +32,7 @@ export function CaseSection({
 
 export function Prose({ children }: { children: ReactNode }) {
   return (
-    <div className="mx-auto max-w-[850px] space-y-5 text-base leading-relaxed text-muted-foreground md:text-[17px]">
+    <div className="mr-auto max-w-[850px] space-y-5 text-base leading-relaxed text-muted-foreground md:text-[17px]">
       {children}
     </div>
   );
