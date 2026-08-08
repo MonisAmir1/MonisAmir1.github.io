@@ -30,6 +30,10 @@ export function CaseSection({
   );
 }
 
+export function B({ children }: { children: ReactNode }) {
+  return <strong className="font-semibold text-foreground">{children}</strong>;
+}
+
 export function Prose({ children }: { children: ReactNode }) {
   return (
     <div className="w-full space-y-5 text-base leading-relaxed text-muted-foreground md:text-[17px]">
