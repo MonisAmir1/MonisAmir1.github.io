@@ -493,14 +493,16 @@ function CaseStudyPage() {
 
         {/* Strategic Recommendations */}
         <CaseSection title="Strategic Recommendations">
-          <Prose>
-            <p className="text-center">
-              The analysis identified three targeted operational improvements designed to address the
-              root causes of rising costs. Rather than applying broad cost-cutting measures, the
-              recommendations focus on eliminating process inefficiencies while maintaining service
-              quality and regulatory compliance.
-            </p>
-          </Prose>
+          <div className="mx-auto max-w-[850px]">
+            <Prose>
+              <p>
+                The analysis identified three targeted operational improvements designed to address the
+                root causes of rising costs. Rather than applying broad cost-cutting measures, the
+                recommendations focus on eliminating process inefficiencies while maintaining service
+                quality and regulatory compliance.
+              </p>
+            </Prose>
+          </div>
 
           <div className="mt-12 space-y-8">
             {recommendations.map((r) => (
@@ -569,13 +571,15 @@ function CaseStudyPage() {
 
         {/* Technical Implementations */}
         <CaseSection title="Technical Implementations">
-          <Prose>
-            <p className="text-center">
-              This project was designed to simulate a real-world business intelligence workflow,
-              covering the complete analytical pipeline from relational data modelling to executive
-              reporting.
-            </p>
-          </Prose>
+          <div className="mx-auto max-w-[850px]">
+            <Prose>
+              <p>
+                This project was designed to simulate a real-world business intelligence workflow,
+                covering the complete analytical pipeline from relational data modelling to executive
+                reporting.
+              </p>
+            </Prose>
+          </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {technical.map((block) => (
