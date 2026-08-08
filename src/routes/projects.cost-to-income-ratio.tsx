@@ -214,26 +214,28 @@ function CaseStudyPage() {
           <Prose>
             <p>
               ABC Banking Group, a mid-sized banking institution headquartered in Luxembourg,
-              experienced a steady escalation in its Cost-to-Income (C/I) Ratio between 2021 and
-              2025, despite relatively stable operating income. The objective of this project was to
-              investigate the underlying operational drivers behind this trend and identify
+              experienced a steady escalation in its <B>Cost-to-Income (C/I) Ratio</B> between 2021
+              and 2025, despite relatively stable operating income. The objective of this project was
+              to investigate the underlying operational drivers behind this trend and identify
               opportunities to improve efficiency through data-driven analysis.
             </p>
             <p>
-              Using SQL and Power BI, I analysed financial, operational, workforce, and process
-              performance data to progressively narrow the investigation from high-level financial
-              indicators to the underlying operational root causes. The analysis revealed that rising
-              operating costs were concentrated within two departments and ultimately traced to
-              significant increases in manual rework across critical KYC and AML processes, which
-              drove higher labour effort, prolonged processing times, and widespread SLA breaches.
+              Using <B>SQL and Power BI</B>, I analysed financial, operational, workforce, and
+              process performance data to progressively narrow the investigation from high-level
+              financial indicators to the underlying operational root causes. The analysis revealed
+              that rising operating costs were concentrated within two departments and ultimately
+              traced to significant increases in manual rework across critical <B>KYC</B> and{" "}
+              <B>AML</B> processes, which drove higher labour effort, prolonged processing times, and
+              widespread SLA breaches.
             </p>
             <p>
               Based on these findings, I developed targeted strategic recommendations focused on
               reducing rework, improving process efficiency, and strengthening cross-departmental
               workflows. If implemented, these initiatives are projected to reduce annual operating
-              expenses by approximately €950,000 and improve the bank's Cost-to-Income Ratio from
-              57.1% to approximately 46.5%, demonstrating how operational analytics can translate
-              business data into practical, evidence-based decisions.
+              expenses by approximately <B>€950,000</B> and improve the bank's{" "}
+              <B>Cost-to-Income Ratio</B> from <B>57.1%</B> to approximately <B>46.5%</B>,
+              demonstrating how operational analytics can translate business data into practical,
+              evidence-based decisions.
             </p>
           </Prose>
         </CaseSection>
