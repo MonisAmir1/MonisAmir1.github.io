@@ -97,33 +97,33 @@ const technical = [
   {
     title: "Data Architecture & Management",
     items: [
-      "Designed a dimensional Star Schema to support scalable analytical modelling.",
-      "Managed and transformed relational datasets using SQL Server.",
-      "Built reusable SQL Views to simplify downstream analysis and improve query efficiency.",
+      <>Designed a dimensional <B>Star Schema</B> to support scalable analytical modelling.</>,
+      <>Managed and transformed relational datasets using <B>SQL Server</B>.</>,
+      <>Built reusable SQL <B>Views</B> to simplify downstream analysis and improve query efficiency.</>,
     ],
   },
   {
     title: "SQL Data Preparation & Analysis",
     items: [
-      "Performed data extraction, transformation, and aggregation using MS SQL Server.",
-      "Applied JOINs, CASE expressions, GROUP BY, CTEs, and aggregate functions to analyse financial, operational, and workforce data.",
-      "Used functions such as CAST, ROUND, and FORMAT to standardise data and prepare business-ready outputs.",
+      <>Performed data extraction, transformation, and aggregation using <B>MS SQL Server</B>.</>,
+      <>Applied <B>JOINs</B>, <B>CASE expressions</B>, <B>GROUP BY</B>, <B>CTEs</B>, and aggregate functions to analyse financial, operational, and workforce data.</>,
+      <>Used functions such as <B>CAST</B>, <B>ROUND</B>, and <B>FORMAT</B> to standardise data and prepare business-ready outputs.</>,
     ],
   },
   {
     title: "Data Modelling & Business Intelligence",
     items: [
-      "Developed a structured Power BI data model with defined relationships between fact and dimension tables.",
-      "Created DAX measures to calculate key business KPIs, including the Cost-to-Income Ratio, operating expenses, SLA performance, workforce utilisation, and rework rates.",
-      "Implemented advanced filtering and drill-through capabilities to support multi-level operational analysis.",
+      <>Developed a structured <B>Power BI</B> data model with defined relationships between fact and dimension tables.</>,
+      <>Created <B>DAX measures</B> to calculate key business KPIs, including the <B>Cost-to-Income Ratio</B>, operating expenses, SLA performance, workforce utilisation, and rework rates.</>,
+      <>Implemented advanced filtering and drill-through capabilities to support multi-level operational analysis.</>,
     ],
   },
   {
     title: "Data Visualisation & Storytelling",
     items: [
-      "Designed interactive and advanced Power BI dashboards and visualisations, including trend analysis, matrix reporting, decomposition, and comparative analysis.",
-      "Applied conditional formatting and business-focused visual design to highlight operational risks, performance trends, and areas requiring management attention.",
-      "Translated complex analytical findings into clear, evidence-based business recommendations through data storytelling.",
+      <>Designed interactive and advanced Power BI dashboards and visualisations, including trend analysis, matrix reporting, decomposition, and comparative analysis.</>,
+      <>Applied conditional formatting and business-focused visual design to highlight operational risks, performance trends, and areas requiring management attention.</>,
+      <>Translated complex analytical findings into clear, evidence-based business recommendations through data storytelling.</>,
     ],
   },
 ];
