@@ -462,15 +462,17 @@ function CaseStudyPage() {
               <Prose>
                 <p>
                   To understand why these two processes had compromised, I analysed workforce
-                  utilisation alongside operational quality metrics. The analysis showed that case
-                  volumes remained broadly stable, indicating that the bank was not processing
-                  significantly more work. Instead, a sharp increase in manual rework from 2023
-                  onwards caused employees to repeatedly process the same cases, resulting in a
-                  substantial rise in logged hours and exhausting available operational capacity. As
-                  workload accumulated without a corresponding increase in productive output, SLA
-                  compliance compromised rapidly, confirming that process quality failures — not
-                  increased demand — were the primary driver of operational inefficiency and rising
-                  costs.
+                  utilisation alongside operational quality metrics. The analysis showed that{" "}
+                  <B>case volumes remained broadly stable</B>, indicating that the bank was not
+                  processing significantly more work. Instead, a sharp increase in{" "}
+                  <B>manual rework</B> from 2023 onwards caused employees to repeatedly process the
+                  same cases, resulting in a substantial rise in logged hours and exhausting available
+                  operational capacity. As workload accumulated without a corresponding increase in
+                  productive output, SLA compliance compromised rapidly, confirming that{" "}
+                  <B>
+                    process quality failures — not increased demand — were the primary driver of
+                    operational inefficiency and rising costs.
+                  </B>
                 </p>
               </Prose>
               <div className="mt-8">
