@@ -409,10 +409,10 @@ function CaseStudyPage() {
                 <p>
                   To determine where the rising operating costs were originating, I compared expense
                   trends across the bank's core operational departments. The analysis showed that
-                  while Asset Management, Private Banking, and Retail Banking maintained stable cost
-                  levels throughout the five-year period, Compliance &amp; Corporate Governance and
-                  Fund Administration &amp; Custody experienced significant cost increases beginning
-                  in 2023. Together, these two departments accounted for over 96% of the bank's
+                  while <B>Asset Management, Private Banking, and Retail Banking</B> maintained stable
+                  cost levels throughout the five-year period, <B>Compliance &amp; Corporate Governance</B>{" "}
+                  and <B>Fund Administration &amp; Custody</B> experienced significant cost increases
+                  beginning in 2023. Together, these two departments accounted for <B>over 96%</B> of the bank's
                   post-2022 cost inflation, narrowing the investigation to a small number of
                   high-impact operational areas.
                 </p>
