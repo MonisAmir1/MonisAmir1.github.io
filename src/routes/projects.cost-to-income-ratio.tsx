@@ -570,11 +570,11 @@ function CaseStudyPage() {
           </p>
           <BulletList
             items={[
-              "Reduce KYC and AML rework rates from approximately 60% to around 15%, significantly improving process quality and reducing unnecessary manual effort.",
-              "Save approximately 47,600 operational hours annually by eliminating avoidable rework and duplicate processing activities.",
-              "Restore SLA compliance, reducing the current 100% breach rate to below 5% and improving service reliability across critical operational processes.",
-              "Reduce annual operating expenses by approximately €950,000 through targeted operational improvements rather than broad cost-cutting measures.",
-              "Improve the Cost-to-Income (C/I) Ratio from 57.1% to approximately 46.5%, bringing the bank back in line with recognised industry benchmarks for operational efficiency.",
+              <><B>Reduce KYC and AML rework rates</B> from approximately <B>60%</B> to around <B>15%</B>, significantly improving process quality and reducing unnecessary manual effort.</>,
+              <><B>Save approximately 47,600 operational hours annually</B> by eliminating avoidable rework and duplicate processing activities.</>,
+              <><B>Restore SLA compliance</B>, reducing the current <B>100% breach rate</B> to <B>below 5%</B> and improving service reliability across critical operational processes.</>,
+              <><B>Reduce annual operating expenses by approximately €950,000</B> through targeted operational improvements rather than broad cost-cutting measures.</>,
+              <><B>Improve the Cost-to-Income (C/I) Ratio</B> from <B>57.1%</B> to approximately <B>46.5%</B>, bringing the bank back in line with recognised industry benchmarks for operational efficiency.</>,
             ]}
           />
         </CaseSection>
