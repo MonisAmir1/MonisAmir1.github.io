@@ -184,7 +184,7 @@ function CaseStudyPage() {
                 {TITLE}
               </h1>
               <div className="mt-7 flex flex-wrap gap-2">
-                {["SQL Server", "Power BI", "DAX", "Star Schema"].map((t) => (
+                {["SQL", "Power BI", "DAX", "Star Schema"].map((t) => (
                   <span
                     key={t}
                     className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground"
