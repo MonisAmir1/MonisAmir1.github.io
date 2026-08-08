@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, PlayCircle } from "lucide-react";
-import { CaseSection, Prose, BulletList, Figure } from "@/components/portfolio/case-study/CaseSection";
+import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
 import { Footer } from "@/components/portfolio/Footer";
 import profileImage from "@/assets/profile-navbar.png.asset.json";
@@ -97,33 +97,33 @@ const technical = [
   {
     title: "Data Architecture & Management",
     items: [
-      "Designed a dimensional Star Schema to support scalable analytical modelling.",
-      "Managed and transformed relational datasets using SQL Server.",
-      "Built reusable SQL Views to simplify downstream analysis and improve query efficiency.",
+      <>Designed a dimensional <B>Star Schema</B> to support scalable analytical modelling.</>,
+      <>Managed and transformed relational datasets using <B>SQL Server</B>.</>,
+      <>Built reusable SQL <B>Views</B> to simplify downstream analysis and improve query efficiency.</>,
     ],
   },
   {
     title: "SQL Data Preparation & Analysis",
     items: [
-      "Performed data extraction, transformation, and aggregation using MS SQL Server.",
-      "Applied JOINs, CASE expressions, GROUP BY, CTEs, and aggregate functions to analyse financial, operational, and workforce data.",
-      "Used functions such as CAST, ROUND, and FORMAT to standardise data and prepare business-ready outputs.",
+      <>Performed data extraction, transformation, and aggregation using <B>MS SQL Server</B>.</>,
+      <>Applied <B>JOINs</B>, <B>CASE expressions</B>, <B>GROUP BY</B>, <B>CTEs</B>, and aggregate functions to analyse financial, operational, and workforce data.</>,
+      <>Used functions such as <B>CAST</B>, <B>ROUND</B>, and <B>FORMAT</B> to standardise data and prepare business-ready outputs.</>,
     ],
   },
   {
     title: "Data Modelling & Business Intelligence",
     items: [
-      "Developed a structured Power BI data model with defined relationships between fact and dimension tables.",
-      "Created DAX measures to calculate key business KPIs, including the Cost-to-Income Ratio, operating expenses, SLA performance, workforce utilisation, and rework rates.",
-      "Implemented advanced filtering and drill-through capabilities to support multi-level operational analysis.",
+      <>Developed a structured <B>Power BI</B> data model with defined relationships between fact and dimension tables.</>,
+      <>Created <B>DAX measures</B> to calculate key business KPIs, including the <B>Cost-to-Income Ratio</B>, operating expenses, SLA performance, workforce utilisation, and rework rates.</>,
+      <>Implemented advanced filtering and drill-through capabilities to support multi-level operational analysis.</>,
     ],
   },
   {
     title: "Data Visualisation & Storytelling",
     items: [
-      "Designed interactive and advanced Power BI dashboards and visualisations, including trend analysis, matrix reporting, decomposition, and comparative analysis.",
-      "Applied conditional formatting and business-focused visual design to highlight operational risks, performance trends, and areas requiring management attention.",
-      "Translated complex analytical findings into clear, evidence-based business recommendations through data storytelling.",
+      <>Designed interactive and advanced Power BI dashboards and visualisations, including trend analysis, matrix reporting, decomposition, and comparative analysis.</>,
+      <>Applied conditional formatting and business-focused visual design to highlight operational risks, performance trends, and areas requiring management attention.</>,
+      <>Translated complex analytical findings into clear, evidence-based business recommendations through data storytelling.</>,
     ],
   },
 ];
@@ -214,26 +214,28 @@ function CaseStudyPage() {
           <Prose>
             <p>
               ABC Banking Group, a mid-sized banking institution headquartered in Luxembourg,
-              experienced a steady escalation in its Cost-to-Income (C/I) Ratio between 2021 and
-              2025, despite relatively stable operating income. The objective of this project was to
-              investigate the underlying operational drivers behind this trend and identify
+              experienced a steady escalation in its <B>Cost-to-Income (C/I) Ratio</B> between 2021
+              and 2025, despite relatively stable operating income. The objective of this project was
+              to investigate the underlying operational drivers behind this trend and identify
               opportunities to improve efficiency through data-driven analysis.
             </p>
             <p>
-              Using SQL and Power BI, I analysed financial, operational, workforce, and process
-              performance data to progressively narrow the investigation from high-level financial
-              indicators to the underlying operational root causes. The analysis revealed that rising
-              operating costs were concentrated within two departments and ultimately traced to
-              significant increases in manual rework across critical KYC and AML processes, which
-              drove higher labour effort, prolonged processing times, and widespread SLA breaches.
+              Using <B>SQL and Power BI</B>, I analysed financial, operational, workforce, and
+              process performance data to progressively narrow the investigation from high-level
+              financial indicators to the underlying operational root causes. The analysis revealed
+              that rising operating costs were concentrated within two departments and ultimately
+              traced to significant increases in manual rework across critical <B>KYC</B> and{" "}
+              <B>AML</B> processes, which drove higher labour effort, prolonged processing times, and
+              widespread SLA breaches.
             </p>
             <p>
               Based on these findings, I developed targeted strategic recommendations focused on
               reducing rework, improving process efficiency, and strengthening cross-departmental
               workflows. If implemented, these initiatives are projected to reduce annual operating
-              expenses by approximately €950,000 and improve the bank's Cost-to-Income Ratio from
-              57.1% to approximately 46.5%, demonstrating how operational analytics can translate
-              business data into practical, evidence-based decisions.
+              expenses by approximately <B>€950,000</B> and improve the bank's{" "}
+              <B>Cost-to-Income Ratio</B> from <B>57.1%</B> to approximately <B>46.5%</B>,
+              demonstrating how operational analytics can translate business data into practical,
+              evidence-based decisions.
             </p>
           </Prose>
         </CaseSection>
@@ -242,7 +244,7 @@ function CaseStudyPage() {
         <CaseSection title="Business Context" reading>
           <Prose>
             <p>
-              ABC Banking Group is a mid-sized banking institution headquartered in Luxembourg,
+              <B>ABC Banking Group</B> is a mid-sized banking institution headquartered in Luxembourg,
               providing Retail Banking, Corporate Banking, Wealth &amp; Private Banking, Payments
               &amp; Transaction Operations, and Compliance &amp; Financial Crime services. Operating
               within Luxembourg, the bank must balance operational efficiency, regulatory
@@ -255,8 +257,8 @@ function CaseStudyPage() {
         <CaseSection title="Problem Statement & Business Challenge" reading>
           <Prose>
             <p>
-              Over recent years, ABC Banking Group observed a steady escalation in its Cost-to-Income
-              (C/I) Ratio. While the financial trend was evident, management lacked visibility into
+              Over recent years, ABC Banking Group observed a steady escalation in its{" "}
+              <B>Cost-to-Income (C/I) Ratio</B>. While the financial trend was evident, management lacked visibility into
               the underlying operational drivers, making it difficult to determine where
               inefficiencies existed and which areas required attention. A structured, data-driven
               investigation was required to identify the root causes and support informed
@@ -269,7 +271,7 @@ function CaseStudyPage() {
         <CaseSection title="Why This Problem Matters" reading>
           <Prose>
             <p>
-              The Cost-to-Income Ratio is a key measure of operational efficiency within the banking
+              The <B>Cost-to-Income Ratio</B> is a key measure of operational efficiency within the banking
               industry. Without understanding the factors driving its escalation, management risks
               making decisions based on assumptions rather than evidence. Identifying the true
               operational drivers enables targeted improvements that strengthen efficiency, control
@@ -335,7 +337,7 @@ function CaseStudyPage() {
               <p>
                 Management provided five years of historical operational and financial data covering
                 multiple departments and business processes. Rather than beginning with assumptions,
-                I followed a structured analytical approach that progressively narrowed the
+                I followed a <B>structured analytical approach</B> that progressively narrowed the
                 investigation from financial performance to operational root causes.
               </p>
             </Prose>
@@ -370,10 +372,11 @@ function CaseStudyPage() {
                   The analysis began with a review of the bank's overall financial performance to
                   determine whether the escalation in the Cost-to-Income (C/I) Ratio was genuine and
                   to understand the financial trend behind it. The analysis confirmed that the C/I
-                  Ratio increased from 45.64% in 2021 to 57.13% in 2025, driven by a significant rise
-                  in operating expenses while operating income remained broadly stable. The most
-                  notable shift occurred between 2022 and 2023, marking the point at which
-                  operational costs began to outpace the bank's ability to generate income.
+                  Ratio increased from <B>45.64% in 2021</B> to <B>57.13% in 2025</B>, driven by a
+                  significant rise in operating expenses while operating income remained broadly
+                  stable. The most notable shift occurred between <B>2022 and 2023</B>, marking the
+                  point at which operational costs began to outpace the bank's ability to generate
+                  income.
                 </p>
               </Prose>
               <div className="mt-8">
@@ -387,9 +390,10 @@ function CaseStudyPage() {
                 <p>
                   To understand what was driving the increase in operating expenses, I analysed the
                   bank's major cost categories over the five-year period. The results showed that
-                  almost all of the post-2022 cost growth was concentrated in Direct Fixed Costs and
-                  Regulatory Fees Overhead, which together accounted for 97.6% of the total increase
-                  in operating expenses. In contrast, IT Systems Costs remained relatively stable
+                  almost all of the post-2022 cost growth was concentrated in <B>Direct Fixed Costs</B>{" "}
+                  and <B>Regulatory Fees Overhead</B>, which together accounted for <B>97.6%</B> of
+                  the total increase in operating expenses. In contrast, <B>IT Systems Costs</B>{" "}
+                  remained relatively stable
                   throughout the period, indicating that the deterioration was driven by specific
                   operational cost areas rather than organisation-wide cost inflation.
                 </p>
@@ -405,10 +409,10 @@ function CaseStudyPage() {
                 <p>
                   To determine where the rising operating costs were originating, I compared expense
                   trends across the bank's core operational departments. The analysis showed that
-                  while Asset Management, Private Banking, and Retail Banking maintained stable cost
-                  levels throughout the five-year period, Compliance &amp; Corporate Governance and
-                  Fund Administration &amp; Custody experienced significant cost increases beginning
-                  in 2023. Together, these two departments accounted for over 96% of the bank's
+                  while <B>Asset Management, Private Banking, and Retail Banking</B> maintained stable
+                  cost levels throughout the five-year period, <B>Compliance &amp; Corporate Governance</B>{" "}
+                  and <B>Fund Administration &amp; Custody</B> experienced significant cost increases
+                  beginning in 2023. Together, these two departments accounted for <B>over 96%</B> of the bank's
                   post-2022 cost inflation, narrowing the investigation to a small number of
                   high-impact operational areas.
                 </p>
@@ -433,11 +437,15 @@ function CaseStudyPage() {
                 <p>
                   Having isolated the two departments responsible for the majority of cost inflation,
                   I drilled down into their core operational processes to identify where performance
-                  had compromised. The matrix compares each process against its target Service Level
-                  Agreement (SLA), showing the average variance in processing time. Negative values
-                  indicate that a process was completed within its target timeframe, while positive
-                  values represent delays beyond the agreed SLA. The analysis revealed that KYC &amp;
-                  Client Onboarding and AML Transaction Monitoring &amp; Screening experienced
+                  had compromised. The matrix compares each process against its{" "}
+                  <B>target Service Level Agreement (SLA)</B>, showing the average variance in
+                  processing time.{" "}
+                  <B>
+                    Negative values indicate that a process was completed within its target
+                    timeframe, while positive values represent delays beyond the agreed SLA.
+                  </B>{" "}
+                  The analysis revealed that <B>KYC &amp; Client Onboarding</B> and{" "}
+                  <B>AML Transaction Monitoring &amp; Screening</B> experienced
                   significant and sustained SLA breaches from 2023 onwards, whereas all other
                   processes consistently remained within their target service levels. This confirmed
                   that the operational slowdown was concentrated within two critical processes rather
@@ -454,15 +462,17 @@ function CaseStudyPage() {
               <Prose>
                 <p>
                   To understand why these two processes had compromised, I analysed workforce
-                  utilisation alongside operational quality metrics. The analysis showed that case
-                  volumes remained broadly stable, indicating that the bank was not processing
-                  significantly more work. Instead, a sharp increase in manual rework from 2023
-                  onwards caused employees to repeatedly process the same cases, resulting in a
-                  substantial rise in logged hours and exhausting available operational capacity. As
-                  workload accumulated without a corresponding increase in productive output, SLA
-                  compliance compromised rapidly, confirming that process quality failures — not
-                  increased demand — were the primary driver of operational inefficiency and rising
-                  costs.
+                  utilisation alongside operational quality metrics. The analysis showed that{" "}
+                  <B>case volumes remained broadly stable</B>, indicating that the bank was not
+                  processing significantly more work. Instead, a sharp increase in{" "}
+                  <B>manual rework</B> from 2023 onwards caused employees to repeatedly process the
+                  same cases, resulting in a substantial rise in logged hours and exhausting available
+                  operational capacity. As workload accumulated without a corresponding increase in
+                  productive output, SLA compliance compromised rapidly, confirming that{" "}
+                  <B>
+                    process quality failures — not increased demand — were the primary driver of
+                    operational inefficiency and rising costs.
+                  </B>
                 </p>
               </Prose>
               <div className="mt-8">
@@ -476,11 +486,12 @@ function CaseStudyPage() {
                 <p>
                   The analysis confirmed that the escalation in the bank's Cost-to-Income (C/I) Ratio
                   was not driven by declining income or increased business demand, but by a breakdown
-                  in operational efficiency. Rising operating costs were concentrated within
-                  Compliance &amp; Corporate Governance and Fund Administration &amp; Custody, where
-                  prolonged processing times in KYC &amp; Client Onboarding and AML Transaction
-                  Monitoring &amp; Screening became evident. Further analysis revealed that the
-                  primary driver was a significant increase in manual rework, which consumed
+                  in operational efficiency. Rising operating costs were concentrated within{" "}
+                  <B>Compliance &amp; Corporate Governance</B> and{" "}
+                  <B>Fund Administration &amp; Custody</B>, where prolonged processing times in{" "}
+                  <B>KYC &amp; Client Onboarding</B> and{" "}
+                  <B>AML Transaction Monitoring &amp; Screening</B> became evident. Further analysis
+                  revealed that the primary driver was a significant increase in <B>manual rework</B>, which consumed
                   operational capacity, increased employee effort, and caused persistent SLA
                   breaches. Together, these findings established a clear link between declining
                   process quality and the bank's worsening financial performance, providing a strong
@@ -560,11 +571,11 @@ function CaseStudyPage() {
           </p>
           <BulletList
             items={[
-              "Reduce KYC and AML rework rates from approximately 60% to around 15%, significantly improving process quality and reducing unnecessary manual effort.",
-              "Save approximately 47,600 operational hours annually by eliminating avoidable rework and duplicate processing activities.",
-              "Restore SLA compliance, reducing the current 100% breach rate to below 5% and improving service reliability across critical operational processes.",
-              "Reduce annual operating expenses by approximately €950,000 through targeted operational improvements rather than broad cost-cutting measures.",
-              "Improve the Cost-to-Income (C/I) Ratio from 57.1% to approximately 46.5%, bringing the bank back in line with recognised industry benchmarks for operational efficiency.",
+              <><B>Reduce KYC and AML rework rates</B> from approximately <B>60%</B> to around <B>15%</B>, significantly improving process quality and reducing unnecessary manual effort.</>,
+              <><B>Save approximately 47,600 operational hours annually</B> by eliminating avoidable rework and duplicate processing activities.</>,
+              <><B>Restore SLA compliance</B>, reducing the current <B>100% breach rate</B> to <B>below 5%</B> and improving service reliability across critical operational processes.</>,
+              <><B>Reduce annual operating expenses by approximately €950,000</B> through targeted operational improvements rather than broad cost-cutting measures.</>,
+              <><B>Improve the Cost-to-Income (C/I) Ratio</B> from <B>57.1%</B> to approximately <B>46.5%</B>, bringing the bank back in line with recognised industry benchmarks for operational efficiency.</>,
             ]}
           />
         </CaseSection>
@@ -586,8 +597,8 @@ function CaseStudyPage() {
               <div key={block.title} className="card-surface card-hover">
                 <h3 className="text-lg font-semibold text-foreground">{block.title}</h3>
                 <ul className="mt-4 space-y-2.5">
-                  {block.items.map((item) => (
-                    <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                  {block.items.map((item, ix) => (
+                    <li key={ix} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
                       <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       <span>{item}</span>
                     </li>
