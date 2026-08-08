@@ -257,8 +257,8 @@ function CaseStudyPage() {
         <CaseSection title="Problem Statement & Business Challenge" reading>
           <Prose>
             <p>
-              Over recent years, ABC Banking Group observed a steady escalation in its Cost-to-Income
-              (C/I) Ratio. While the financial trend was evident, management lacked visibility into
+              Over recent years, ABC Banking Group observed a steady escalation in its{" "}
+              <B>Cost-to-Income (C/I) Ratio</B>. While the financial trend was evident, management lacked visibility into
               the underlying operational drivers, making it difficult to determine where
               inefficiencies existed and which areas required attention. A structured, data-driven
               investigation was required to identify the root causes and support informed
