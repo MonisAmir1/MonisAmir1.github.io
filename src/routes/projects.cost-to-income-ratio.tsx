@@ -164,7 +164,7 @@ function CaseStudyPage() {
             className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Projects
+            Back to Portfolio
           </Link>
         </nav>
       </header>
@@ -184,7 +184,7 @@ function CaseStudyPage() {
                 {TITLE}
               </h1>
               <div className="mt-7 flex flex-wrap gap-2">
-                {["SQL Server", "Power BI", "DAX", "Star Schema"].map((t) => (
+                {["SQL", "Power BI", "DAX", "Star Schema"].map((t) => (
                   <span
                     key={t}
                     className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground"
@@ -621,7 +621,7 @@ function CaseStudyPage() {
               className="inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-base text-primary-foreground transition-colors hover:bg-primary/90"
             >
               <ArrowLeft className="h-4 w-4" />
-              Back to Projects
+              Back to Portfolio
             </Link>
           </div>
         </CaseSection>
