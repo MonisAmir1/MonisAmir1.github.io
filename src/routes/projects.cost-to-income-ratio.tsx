@@ -586,8 +586,8 @@ function CaseStudyPage() {
               <div key={block.title} className="card-surface card-hover">
                 <h3 className="text-lg font-semibold text-foreground">{block.title}</h3>
                 <ul className="mt-4 space-y-2.5">
-                  {block.items.map((item) => (
-                    <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                  {block.items.map((item, ix) => (
+                    <li key={ix} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
                       <span className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       <span>{item}</span>
                     </li>
