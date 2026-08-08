@@ -437,11 +437,15 @@ function CaseStudyPage() {
                 <p>
                   Having isolated the two departments responsible for the majority of cost inflation,
                   I drilled down into their core operational processes to identify where performance
-                  had compromised. The matrix compares each process against its target Service Level
-                  Agreement (SLA), showing the average variance in processing time. Negative values
-                  indicate that a process was completed within its target timeframe, while positive
-                  values represent delays beyond the agreed SLA. The analysis revealed that KYC &amp;
-                  Client Onboarding and AML Transaction Monitoring &amp; Screening experienced
+                  had compromised. The matrix compares each process against its{" "}
+                  <B>target Service Level Agreement (SLA)</B>, showing the average variance in
+                  processing time.{" "}
+                  <B>
+                    Negative values indicate that a process was completed within its target
+                    timeframe, while positive values represent delays beyond the agreed SLA.
+                  </B>{" "}
+                  The analysis revealed that <B>KYC &amp; Client Onboarding</B> and{" "}
+                  <B>AML Transaction Monitoring &amp; Screening</B> experienced
                   significant and sustained SLA breaches from 2023 onwards, whereas all other
                   processes consistently remained within their target service levels. This confirmed
                   that the operational slowdown was concentrated within two critical processes rather
