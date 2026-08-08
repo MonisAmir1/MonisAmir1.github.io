@@ -486,11 +486,12 @@ function CaseStudyPage() {
                 <p>
                   The analysis confirmed that the escalation in the bank's Cost-to-Income (C/I) Ratio
                   was not driven by declining income or increased business demand, but by a breakdown
-                  in operational efficiency. Rising operating costs were concentrated within
-                  Compliance &amp; Corporate Governance and Fund Administration &amp; Custody, where
-                  prolonged processing times in KYC &amp; Client Onboarding and AML Transaction
-                  Monitoring &amp; Screening became evident. Further analysis revealed that the
-                  primary driver was a significant increase in manual rework, which consumed
+                  in operational efficiency. Rising operating costs were concentrated within{" "}
+                  <B>Compliance &amp; Corporate Governance</B> and{" "}
+                  <B>Fund Administration &amp; Custody</B>, where prolonged processing times in{" "}
+                  <B>KYC &amp; Client Onboarding</B> and{" "}
+                  <B>AML Transaction Monitoring &amp; Screening</B> became evident. Further analysis
+                  revealed that the primary driver was a significant increase in <B>manual rework</B>, which consumed
                   operational capacity, increased employee effort, and caused persistent SLA
                   breaches. Together, these findings established a clear link between declining
                   process quality and the bank's worsening financial performance, providing a strong
