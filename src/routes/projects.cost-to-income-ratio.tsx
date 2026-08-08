@@ -390,9 +390,10 @@ function CaseStudyPage() {
                 <p>
                   To understand what was driving the increase in operating expenses, I analysed the
                   bank's major cost categories over the five-year period. The results showed that
-                  almost all of the post-2022 cost growth was concentrated in Direct Fixed Costs and
-                  Regulatory Fees Overhead, which together accounted for 97.6% of the total increase
-                  in operating expenses. In contrast, IT Systems Costs remained relatively stable
+                  almost all of the post-2022 cost growth was concentrated in <B>Direct Fixed Costs</B>{" "}
+                  and <B>Regulatory Fees Overhead</B>, which together accounted for <B>97.6%</B> of
+                  the total increase in operating expenses. In contrast, <B>IT Systems Costs</B>{" "}
+                  remained relatively stable
                   throughout the period, indicating that the deterioration was driven by specific
                   operational cost areas rather than organisation-wide cost inflation.
                 </p>
