@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
 import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
-import luxmoraThumb from "@/assets/dashboard-luxmora-executive.png.asset.json";
+import luxmoraThumb from "@/assets/dashboard-luxmora-fit.png.asset.json";
 
 
 const projects = [
