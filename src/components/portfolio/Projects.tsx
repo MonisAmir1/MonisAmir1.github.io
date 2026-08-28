@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
 import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
+import luxmoraThumb from "@/assets/dashboard-luxmora-executive.png.asset.json";
 
 
 const projects = [
@@ -12,6 +13,7 @@ const projects = [
     description: "Analysed the operational drivers behind an escalating Cost-to-Income Ratio and developed data-driven recommendations to improve banking efficiency.",
     tools: ["SQL", "Power BI"],
     thumbnail: dashboardThumb.url,
+    aspect: "aspect-[1065/596]",
     to: "/projects/cost-to-income-ratio" as const,
   },
 
@@ -20,6 +22,8 @@ const projects = [
     industry: "Industry",
     description: "Short description of the project, the business problem addressed, and the outcome delivered.",
     tools: ["Tool", "Tool", "Tool"],
+    thumbnail: luxmoraThumb.url,
+    aspect: "aspect-[1756/742]",
   },
   {
     title: "Project Title",
