@@ -18,10 +18,10 @@ const projects = [
   },
 
   {
-    title: "Project Title",
-    industry: "Industry",
-    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
-    tools: ["Tool", "Tool", "Tool"],
+    title: "Strategic Business Transformation",
+    industry: "CONSULTING | BIG 4",
+    description: "Analysed the portfolio performance and growth dynamics to identify strategic transformation priorities and develop an evidence-based investment portfolio.",
+    tools: ["Excel", "Power BI"],
     thumbnail: luxmoraThumb.url,
     aspect: "aspect-[1065/596]",
   },
