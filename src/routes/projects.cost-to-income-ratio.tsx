@@ -613,7 +613,7 @@ function CaseStudyPage() {
         <CaseSection title="Lessons Learned" reading>
           <Prose>
             <p>
-              This project reinforced that effective data analysis goes beyond reporting numbers — it's
+              This project reinforced that effective data analysis goes beyond reporting numbers. It's
               about understanding business processes, asking the right questions, and following the
               evidence to identify root causes.
             </p>
