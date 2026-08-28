@@ -23,7 +23,7 @@ const projects = [
     description: "Short description of the project, the business problem addressed, and the outcome delivered.",
     tools: ["Tool", "Tool", "Tool"],
     thumbnail: luxmoraThumb.url,
-    aspect: "aspect-[1756/742]",
+    aspect: "aspect-[1065/596]",
   },
   {
     title: "Project Title",
