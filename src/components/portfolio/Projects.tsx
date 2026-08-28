@@ -64,13 +64,13 @@ export function Projects() {
             key={i}
             className="card-surface card-hover flex flex-col"
           >
-            <div className="aspect-[1065/596] w-full overflow-hidden rounded-md border border-border bg-surface">
+            <div className={`${project.aspect} w-full overflow-hidden rounded-md border border-border bg-surface`}>
               {project.thumbnail && (
                 <img
                   src={project.thumbnail}
                   alt={project.title}
                   loading="lazy"
-                  className="h-full w-full object-cover object-left"
+                  className="h-full w-full object-cover"
                 />
               )}
             </div>
