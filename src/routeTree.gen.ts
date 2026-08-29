@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
 import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
 
 const IndexRoute = IndexRouteImport.update({
@@ -17,6 +18,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsStrategicBusinessTransformationRoute =
+  ProjectsStrategicBusinessTransformationRouteImport.update({
+    id: '/projects/strategic-business-transformation',
+    path: '/projects/strategic-business-transformation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProjectsCostToIncomeRatioRoute =
   ProjectsCostToIncomeRatioRouteImport.update({
     id: '/projects/cost-to-income-ratio',
@@ -27,27 +34,41 @@ const ProjectsCostToIncomeRatioRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
+  '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
+  '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
+  '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/projects/cost-to-income-ratio'
+  fullPaths:
+    | '/'
+    | '/projects/cost-to-income-ratio'
+    | '/projects/strategic-business-transformation'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/projects/cost-to-income-ratio'
-  id: '__root__' | '/' | '/projects/cost-to-income-ratio'
+  to:
+    | '/'
+    | '/projects/cost-to-income-ratio'
+    | '/projects/strategic-business-transformation'
+  id:
+    | '__root__'
+    | '/'
+    | '/projects/cost-to-income-ratio'
+    | '/projects/strategic-business-transformation'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ProjectsCostToIncomeRatioRoute: typeof ProjectsCostToIncomeRatioRoute
+  ProjectsStrategicBusinessTransformationRoute: typeof ProjectsStrategicBusinessTransformationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -57,6 +78,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/strategic-business-transformation': {
+      id: '/projects/strategic-business-transformation'
+      path: '/projects/strategic-business-transformation'
+      fullPath: '/projects/strategic-business-transformation'
+      preLoaderRoute: typeof ProjectsStrategicBusinessTransformationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects/cost-to-income-ratio': {
@@ -72,6 +100,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ProjectsCostToIncomeRatioRoute: ProjectsCostToIncomeRatioRoute,
+  ProjectsStrategicBusinessTransformationRoute:
+    ProjectsStrategicBusinessTransformationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

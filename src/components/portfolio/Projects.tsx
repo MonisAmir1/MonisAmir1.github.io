@@ -24,7 +24,9 @@ const projects = [
     tools: ["Excel", "Power BI"],
     thumbnail: luxmoraThumb.url,
     aspect: "aspect-[1065/596]",
+    to: "/projects/strategic-business-transformation" as const,
   },
+
   {
     title: "Project Title",
     industry: "Industry",
