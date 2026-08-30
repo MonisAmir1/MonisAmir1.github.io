@@ -38,17 +38,21 @@ export function ExcelTables({
       {open && (
         <div className="fade-up mt-6 grid gap-6 lg:grid-cols-2">
           <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-soft">
-            <figcaption className="border-b border-border px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-              {leftLabel}
-            </figcaption>
+            {leftLabel && (
+              <figcaption className="border-b border-border px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
+                {leftLabel}
+              </figcaption>
+            )}
             <div className="overflow-x-auto p-3">
               <img src={left} alt={leftAlt} loading="lazy" className="w-full min-w-[420px]" />
             </div>
           </figure>
           <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-soft">
-            <figcaption className="border-b border-border px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-              {rightLabel}
-            </figcaption>
+            {rightLabel && (
+              <figcaption className="border-b border-border px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
+                {rightLabel}
+              </figcaption>
+            )}
             <div className="overflow-x-auto p-3">
               <img src={right} alt={rightAlt} loading="lazy" className="w-full min-w-[420px]" />
             </div>
