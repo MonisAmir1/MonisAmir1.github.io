@@ -525,15 +525,10 @@ function CaseStudyPage() {
                   primarily through higher value per unit rather than sustained volume expansion.
                 </p>
               </Prose>
-              <div className="mt-8">
-                <h4 className="mb-4 text-center text-lg font-semibold text-foreground">
-                  Net Revenue Vs Units Sold Trend
-                </h4>
-                <Figure
-                  src={revenueTrend.url}
-                  alt="Net revenue versus units sold trend from 2021 to 2025"
-                />
-              </div>
+              <Figure
+                src={revenueTrend.url}
+                alt="Net revenue versus units sold trend from 2021 to 2025"
+              />
               <ExcelTables
                 left={yearlyFinancials.url}
                 right={kpiDeltas.url}
