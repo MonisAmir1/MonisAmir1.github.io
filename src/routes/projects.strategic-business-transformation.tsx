@@ -1048,17 +1048,6 @@ function CaseStudyPage() {
             </button>
           </div>
 
-          <div className="mx-auto mt-10 max-w-[850px]">
-            <Prose>
-              <p>
-                LUXMORA has continued to grow revenue despite a decline in unit volumes. The gap is
-                being driven by rising revenue per unit, indicating that growth is increasingly
-                dependent on revenue quality rather than volume expansion. This creates a strategic
-                need to determine which parts of the portfolio can sustain attractive growth, where
-                economics are strongest, and where resources should be reallocated.
-              </p>
-            </Prose>
-          </div>
         </CaseSection>
 
         {/* Lessons Learned */}
