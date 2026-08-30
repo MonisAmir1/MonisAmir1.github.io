@@ -812,8 +812,6 @@ function CaseStudyPage() {
               <ExcelTables
                 left={rpuMarket.url}
                 right={rpuSegment.url}
-                leftLabel="Revenue per Unit Trend By Market"
-                rightLabel="Revenue per Unit Trend By Customer Segment"
                 leftAlt="Excel table of revenue per unit trend by market"
                 rightAlt="Excel table of revenue per unit trend by customer segment"
               />

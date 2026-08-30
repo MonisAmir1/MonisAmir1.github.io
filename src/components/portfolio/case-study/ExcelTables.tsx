@@ -4,8 +4,8 @@ import { ChevronDown, Table2 } from "lucide-react";
 export function ExcelTables({
   left,
   right,
-  leftLabel = "Detailed Excel Table",
-  rightLabel = "Detailed Excel Table",
+  leftLabel,
+  rightLabel,
   leftAlt,
   rightAlt,
 }: {
