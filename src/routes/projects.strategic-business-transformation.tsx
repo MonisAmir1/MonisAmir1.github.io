@@ -680,7 +680,7 @@ function CaseStudyPage() {
             <Insight title="Categories Strategic Positions">
               <Prose>
                 <p>
-                  Each category was assessed against the portfolio median across four dimensions:{" "}
+                  Now, each category was assessed against the portfolio median across four dimensions:{" "}
                   <B>growth</B>, <B>demand</B>, <B>economic quality</B>, and{" "}
                   <B>economic materiality</B>. Categories were classified as either above or below
                   the portfolio median to establish a consistent relative view of strategic
