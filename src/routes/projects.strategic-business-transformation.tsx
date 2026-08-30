@@ -1034,9 +1034,6 @@ function CaseStudyPage() {
 
         {/* Dashboard */}
         <CaseSection title="Dashboard">
-          <h3 className="mb-6 text-center text-lg font-semibold text-foreground">
-            LUXMORA | Executive Overview
-          </h3>
           <Figure
             src={dashboardImage.url}
             alt="LUXMORA Executive Overview dashboard showing 2025 net revenue, units sold, revenue per unit, operating contribution margin and YoY revenue growth"
