@@ -748,10 +748,8 @@ function CaseStudyPage() {
                     <B>Everyday Nutrition</B> and <B>Vitamins &amp; Minerals</B> and{" "}
                     <B>Stress &amp; Wellbeing</B>
                   </p>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                    These have above Median Economic Quality + Materiality but weaker growth and/or
-                    Demand. This tells us they are economically important but require a different
-                    strategic question from the high-growth platforms.
+                  <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+                    {"These have above Median Economic Quality + Materiality but weaker growth and/or Demand.\n\n\nThis tells us they are economically important but require a different strategic question from the high-growth platforms."}
                   </p>
                 </div>
                 <div className="card-surface card-hover">
