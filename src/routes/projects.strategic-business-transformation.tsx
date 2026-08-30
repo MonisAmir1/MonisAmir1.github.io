@@ -580,7 +580,7 @@ function CaseStudyPage() {
                     ]}
                   />
                   <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                    This is an example of <B>genuine volume-supported growth</B>.
+                    This is an example of genuine volume-supported growth.
                   </p>
                 </div>
                 <div className="card-surface card-hover">
