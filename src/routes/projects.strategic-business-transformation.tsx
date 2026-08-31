@@ -1039,13 +1039,15 @@ function CaseStudyPage() {
             alt="LUXMORA Executive Overview dashboard showing 2025 net revenue, units sold, revenue per unit, operating contribution margin and YoY revenue growth"
           />
           <div className="mt-6 flex justify-end">
-            <button
-              type="button"
+            <a
+              href="https://github.com/MonisAmir1/Strategic_Business_Transformation/tree/main/Dashboard/Dashboard_Images"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-sm text-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary hover:shadow-md"
             >
               View Full Dashboard
               <ExternalLink className="h-4 w-4" />
-            </button>
+            </a>
           </div>
 
         </CaseSection>
