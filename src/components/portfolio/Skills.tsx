@@ -40,15 +40,19 @@ const groups = [
 export function Skills() {
   return (
     <Section id="skills" title="Skills">
-      <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-12">
+      <div className="mb-12 grid grid-cols-4 place-items-center gap-6 sm:grid-cols-7 md:gap-10">
         {tools.map((t) => (
-          <img
+          <div
             key={t.name}
-            src={t.src}
-            alt={t.name}
-            title={t.name}
-            className="h-14 w-auto object-contain md:h-16"
-          />
+            className="flex h-14 w-full items-center justify-center md:h-16"
+          >
+            <img
+              src={t.src}
+              alt={t.name}
+              title={t.name}
+              className="h-full w-auto max-w-full object-contain"
+            />
+          </div>
         ))}
       </div>
       <div className="grid gap-8 md:grid-cols-3">
