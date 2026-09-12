@@ -4,6 +4,7 @@ import sqlAsset from "@/assets/skill-sql.png.asset.json";
 import powerbiAsset from "@/assets/skill-powerbi.png.asset.json";
 import tableauAsset from "@/assets/skill-tableau.png.asset.json";
 import fabricAsset from "@/assets/skill-fabric.png.asset.json";
+import databricksAsset from "@/assets/skill-databricks.png.asset.json";
 import aiAsset from "@/assets/skill-ai.png.asset.json";
 
 const tools = [
@@ -12,6 +13,7 @@ const tools = [
   { name: "Power BI", src: powerbiAsset.url },
   { name: "Tableau", src: tableauAsset.url },
   { name: "Fabric", src: fabricAsset.url },
+  { name: "Databricks", src: databricksAsset.url },
   { name: "AI", src: aiAsset.url },
 ];
 
