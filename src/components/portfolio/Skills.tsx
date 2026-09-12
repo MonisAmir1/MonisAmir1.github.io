@@ -44,13 +44,13 @@ export function Skills() {
         {tools.map((t) => (
           <div
             key={t.name}
-            className="flex h-14 w-16 items-center justify-center md:h-16 md:w-20"
+            className="flex h-12 w-12 items-center justify-center md:h-14 md:w-14"
           >
             <img
               src={t.src}
               alt={t.name}
               title={t.name}
-              className="h-full w-auto max-w-full object-contain"
+              className="h-full w-full object-contain"
             />
           </div>
         ))}
