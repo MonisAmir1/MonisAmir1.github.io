@@ -40,11 +40,11 @@ const groups = [
 export function Skills() {
   return (
     <Section id="skills" title="Skills">
-      <div className="mb-12 grid grid-cols-4 place-items-center gap-2 sm:grid-cols-7 md:gap-3">
+      <div className="mb-12 flex flex-wrap items-center justify-center gap-2 md:gap-3">
         {tools.map((t) => (
           <div
             key={t.name}
-            className="flex h-14 w-full items-center justify-center md:h-16"
+            className="flex h-14 w-16 items-center justify-center md:h-16 md:w-20"
           >
             <img
               src={t.src}
