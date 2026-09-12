@@ -40,7 +40,7 @@ const groups = [
 export function Skills() {
   return (
     <Section id="skills" title="Skills">
-      <div className="mb-12 grid grid-cols-4 place-items-center gap-4 sm:grid-cols-7 md:gap-6">
+      <div className="mb-12 grid grid-cols-4 place-items-center gap-3 sm:grid-cols-7 md:gap-4">
         {tools.map((t) => (
           <div
             key={t.name}
