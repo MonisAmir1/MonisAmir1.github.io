@@ -33,6 +33,8 @@ const projects = [
     industry: "Industry",
     description: "Short description of the project, the business problem addressed, and the outcome delivered.",
     tools: ["Tool", "Tool", "Tool"],
+    thumbnail: flowAdoptionThumb.url,
+    aspect: "aspect-[1065/596]",
   },
   {
     title: "Project Title",
