@@ -75,7 +75,7 @@ export function Projects() {
                   src={project.thumbnail}
                   alt={project.title}
                   loading="lazy"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
               )}
             </div>
