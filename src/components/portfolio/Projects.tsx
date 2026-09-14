@@ -32,7 +32,7 @@ const projects = [
     title: "Product Adoption & Customer Retention",
     industry: "FINTECH",
     description: "Analysed product adoption and customer behaviour to identify engagement barriers and develop evidence-based strategies to improve meaningful and sustained usage.",
-    tools: ["Databricks", "Tool", "Tool"],
+    tools: ["Databricks"],
     thumbnail: flowAdoptionThumb.url,
     aspect: "aspect-[1065/596]",
   },
