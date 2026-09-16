@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
+import { Route as ProjectsProductAdoptionCustomerRetentionRouteImport } from './routes/projects.product-adoption-customer-retention'
 import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
 
 const IndexRoute = IndexRouteImport.update({
@@ -24,6 +25,12 @@ const ProjectsStrategicBusinessTransformationRoute =
     path: '/projects/strategic-business-transformation',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProjectsProductAdoptionCustomerRetentionRoute =
+  ProjectsProductAdoptionCustomerRetentionRouteImport.update({
+    id: '/projects/product-adoption-customer-retention',
+    path: '/projects/product-adoption-customer-retention',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProjectsCostToIncomeRatioRoute =
   ProjectsCostToIncomeRatioRouteImport.update({
     id: '/projects/cost-to-income-ratio',
@@ -34,17 +41,20 @@ const ProjectsCostToIncomeRatioRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
+  '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
+  '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
+  '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRouteTypes {
@@ -52,22 +62,26 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/projects/cost-to-income-ratio'
+    | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/projects/cost-to-income-ratio'
+    | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
   id:
     | '__root__'
     | '/'
     | '/projects/cost-to-income-ratio'
+    | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ProjectsCostToIncomeRatioRoute: typeof ProjectsCostToIncomeRatioRoute
+  ProjectsProductAdoptionCustomerRetentionRoute: typeof ProjectsProductAdoptionCustomerRetentionRoute
   ProjectsStrategicBusinessTransformationRoute: typeof ProjectsStrategicBusinessTransformationRoute
 }
 
@@ -87,6 +101,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsStrategicBusinessTransformationRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/product-adoption-customer-retention': {
+      id: '/projects/product-adoption-customer-retention'
+      path: '/projects/product-adoption-customer-retention'
+      fullPath: '/projects/product-adoption-customer-retention'
+      preLoaderRoute: typeof ProjectsProductAdoptionCustomerRetentionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/cost-to-income-ratio': {
       id: '/projects/cost-to-income-ratio'
       path: '/projects/cost-to-income-ratio'
@@ -100,6 +121,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ProjectsCostToIncomeRatioRoute: ProjectsCostToIncomeRatioRoute,
+  ProjectsProductAdoptionCustomerRetentionRoute:
+    ProjectsProductAdoptionCustomerRetentionRoute,
   ProjectsStrategicBusinessTransformationRoute:
     ProjectsStrategicBusinessTransformationRoute,
 }
