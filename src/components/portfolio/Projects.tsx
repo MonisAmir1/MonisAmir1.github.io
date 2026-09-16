@@ -35,6 +35,7 @@ const projects = [
     tools: ["Databricks"],
     thumbnail: flowAdoptionThumb.url,
     aspect: "aspect-[1065/596]",
+    to: "/projects/product-adoption-customer-retention" as const,
   },
   {
     title: "Project Title",
