@@ -114,7 +114,24 @@ function CaseStudyPage() {
           <div className="mx-auto max-w-[850px]"><h3 className="text-lg font-semibold text-foreground">Data available</h3><BulletList items={[<>Customer &amp; Subscription Data</>, <>Platform Activity Data</>, <>ABC Pay Flow Product Activity Data</>]} /></div>
           <div className="mt-10 grid items-center gap-5 md:grid-cols-3"><Figure src={bronzeTables.url} alt="Bronze-layer source tables" /><Figure src={silverTables.url} alt="Silver-layer cleaned tables" /><Figure src={goldTables.url} alt="Gold-layer analytical tables" /></div>
           <div className="mx-auto mt-10 max-w-[850px]"><Prose><p>The analysis used customer, platform activity, Flow product activity, and subscription data covering <B>January 2023 to December 2025</B>, including 18 months before and after the ABC Pay Flow launch. The data was ingested and processed in Databricks using a <B>Bronze–Silver–Gold architecture (Medallion Architecture)</B>: the Bronze layer preserved the raw source data, the Silver layer handled data quality, standardisation, deduplication, and validation, and the Gold layer transformed the cleansed data into business-ready datasets for analysis.</p></Prose></div>
-          <div className="mx-auto mt-12 max-w-xl overflow-hidden rounded-xl border border-border bg-card shadow-soft">{flowSteps.map((step, i) => <div key={step} className="text-center"><p className="px-5 py-3 text-sm font-medium text-foreground">{step}</p>{i < flowSteps.length - 1 && <div className="text-primary">↓</div>}</div>)}</div>
+          <div className="mx-auto mt-12 flex max-w-md flex-col items-center">
+            {flowSteps.map((step, i) => (
+              <div key={step} className="flex w-full flex-col items-center">
+                <div
+                  className={`w-full rounded-xl border px-5 py-3.5 text-center text-sm font-medium shadow-soft ${
+                    i === 0 || i === flowSteps.length - 1
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border bg-card text-foreground"
+                  }`}
+                >
+                  {step}
+                </div>
+                {i < flowSteps.length - 1 && (
+                  <span className="my-1 text-lg leading-none text-primary">↓</span>
+                )}
+              </div>
+            ))}
+          </div>
         </CaseSection>
 
         <CaseSection title="Key Insights">
