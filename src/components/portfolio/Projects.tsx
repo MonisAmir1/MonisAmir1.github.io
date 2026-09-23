@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
 import luxmoraThumb from "@/assets/dashboard-luxmora-fit.png.asset.json";
 import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.png.asset.json";
+import slaDashboardThumb from "@/assets/project-sla-dashboard.png.asset.json";
 
 
 const projects = [
@@ -42,6 +43,8 @@ const projects = [
     industry: "Industry",
     description: "Short description of the project, the business problem addressed, and the outcome delivered.",
     tools: ["Tool", "Tool", "Tool"],
+    thumbnail: slaDashboardThumb.url,
+    aspect: "aspect-[1065/596]",
   },
   {
     title: "Project Title",
