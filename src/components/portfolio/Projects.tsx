@@ -45,6 +45,7 @@ const projects = [
     tools: ["SQL", "Power BI"],
     thumbnail: slaDashboardThumb.url,
     aspect: "aspect-[1065/596]",
+    to: "/projects/compliance-process-optimisation-operational-risk-monitoring" as const,
   },
   {
     title: "Project Title",
