@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
 import { Route as ProjectsProductAdoptionCustomerRetentionRouteImport } from './routes/projects.product-adoption-customer-retention'
 import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
+import { Route as ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport } from './routes/projects.compliance-process-optimisation-operational-risk-monitoring'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -37,15 +38,25 @@ const ProjectsCostToIncomeRatioRoute =
     path: '/projects/cost-to-income-ratio',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute =
+  ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport.update(
+    {
+      id: '/projects/compliance-process-optimisation-operational-risk-monitoring',
+      path: '/projects/compliance-process-optimisation-operational-risk-monitoring',
+      getParentRoute: () => rootRouteImport,
+    } as any,
+  )
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/projects/compliance-process-optimisation-operational-risk-monitoring': typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/projects/compliance-process-optimisation-operational-risk-monitoring': typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
@@ -53,6 +64,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/projects/compliance-process-optimisation-operational-risk-monitoring': typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
@@ -61,18 +73,21 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/projects/compliance-process-optimisation-operational-risk-monitoring'
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/projects/compliance-process-optimisation-operational-risk-monitoring'
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
   id:
     | '__root__'
     | '/'
+    | '/projects/compliance-process-optimisation-operational-risk-monitoring'
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
@@ -80,6 +95,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute: typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   ProjectsCostToIncomeRatioRoute: typeof ProjectsCostToIncomeRatioRoute
   ProjectsProductAdoptionCustomerRetentionRoute: typeof ProjectsProductAdoptionCustomerRetentionRoute
   ProjectsStrategicBusinessTransformationRoute: typeof ProjectsStrategicBusinessTransformationRoute
@@ -115,11 +131,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsCostToIncomeRatioRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/compliance-process-optimisation-operational-risk-monitoring': {
+      id: '/projects/compliance-process-optimisation-operational-risk-monitoring'
+      path: '/projects/compliance-process-optimisation-operational-risk-monitoring'
+      fullPath: '/projects/compliance-process-optimisation-operational-risk-monitoring'
+      preLoaderRoute: typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute:
+    ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute,
   ProjectsCostToIncomeRatioRoute: ProjectsCostToIncomeRatioRoute,
   ProjectsProductAdoptionCustomerRetentionRoute:
     ProjectsProductAdoptionCustomerRetentionRoute,
