@@ -15,6 +15,7 @@ const tools = [
   { name: "Tableau", src: tableauAsset.url },
   { name: "Fabric", src: fabricAsset.url },
   { name: "Databricks", src: databricksAsset.url },
+  { name: "AWS", src: awsAsset.url },
   { name: "AI", src: aiAsset.url },
 ];
 
