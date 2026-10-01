@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
