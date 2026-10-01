@@ -6,6 +6,7 @@ import tableauAsset from "@/assets/skill-tableau.png.asset.json";
 import fabricAsset from "@/assets/skill-fabric.png.asset.json";
 import databricksAsset from "@/assets/skill-databricks.png.asset.json";
 import aiAsset from "@/assets/skill-ai.png.asset.json";
+import awsAsset from "@/assets/skill-aws.png.asset.json";
 
 const tools = [
   { name: "Excel", src: excelAsset.url },
