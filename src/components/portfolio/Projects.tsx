@@ -6,6 +6,8 @@ import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
 import luxmoraThumb from "@/assets/dashboard-luxmora-fit.png.asset.json";
 import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.png.asset.json";
 import slaDashboardThumb from "@/assets/project-sla-dashboard.png.asset.json";
+import transportDashboardThumb from "@/assets/project-transport-dashboard.png.asset.json";
+
 
 
 const projects = [
