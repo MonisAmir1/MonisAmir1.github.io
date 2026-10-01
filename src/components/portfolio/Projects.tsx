@@ -48,10 +48,10 @@ const projects = [
     to: "/projects/compliance-process-optimisation-operational-risk-monitoring" as const,
   },
   {
-    title: "Project Title",
-    industry: "Industry",
-    description: "Short description of the project, the business problem addressed, and the outcome delivered.",
-    tools: ["Tool", "Tool", "Tool"],
+    title: "Transportation Network Volume Forecasting & Optimisation",
+    industry: "SUPPLY CHAIN | LOGISTICS",
+    description: "Analysed daily transportation volumes and capacity across a European e-commerce network, built a forecasting model, and developed data-driven recommendations to improve network planning and reduce operational risk.",
+    tools: ["AWS", "Power BI"],
   },
   {
     title: "Project Title",
