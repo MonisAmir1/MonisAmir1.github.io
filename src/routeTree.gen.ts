@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport } from './routes/projects.transportation-network-volume-forecasting-optimisation'
 import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
 import { Route as ProjectsProductAdoptionCustomerRetentionRouteImport } from './routes/projects.product-adoption-customer-retention'
 import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
@@ -20,6 +21,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsTransportationNetworkVolumeForecastingOptimisationRoute =
+  ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport.update({
+    id: '/projects/transportation-network-volume-forecasting-optimisation',
+    path: '/projects/transportation-network-volume-forecasting-optimisation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProjectsStrategicBusinessTransformationRoute =
   ProjectsStrategicBusinessTransformationRouteImport.update({
     id: '/projects/strategic-business-transformation',
@@ -53,6 +60,7 @@ export interface FileRoutesByFullPath {
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
+  '/projects/transportation-network-volume-forecasting-optimisation': typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -60,6 +68,7 @@ export interface FileRoutesByTo {
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
+  '/projects/transportation-network-volume-forecasting-optimisation': typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -68,6 +77,7 @@ export interface FileRoutesById {
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
+  '/projects/transportation-network-volume-forecasting-optimisation': typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -77,6 +87,7 @@ export interface FileRouteTypes {
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
+    | '/projects/transportation-network-volume-forecasting-optimisation'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -84,6 +95,7 @@ export interface FileRouteTypes {
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
+    | '/projects/transportation-network-volume-forecasting-optimisation'
   id:
     | '__root__'
     | '/'
@@ -91,6 +103,7 @@ export interface FileRouteTypes {
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
     | '/projects/strategic-business-transformation'
+    | '/projects/transportation-network-volume-forecasting-optimisation'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -99,6 +112,7 @@ export interface RootRouteChildren {
   ProjectsCostToIncomeRatioRoute: typeof ProjectsCostToIncomeRatioRoute
   ProjectsProductAdoptionCustomerRetentionRoute: typeof ProjectsProductAdoptionCustomerRetentionRoute
   ProjectsStrategicBusinessTransformationRoute: typeof ProjectsStrategicBusinessTransformationRoute
+  ProjectsTransportationNetworkVolumeForecastingOptimisationRoute: typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -108,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/transportation-network-volume-forecasting-optimisation': {
+      id: '/projects/transportation-network-volume-forecasting-optimisation'
+      path: '/projects/transportation-network-volume-forecasting-optimisation'
+      fullPath: '/projects/transportation-network-volume-forecasting-optimisation'
+      preLoaderRoute: typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects/strategic-business-transformation': {
@@ -150,6 +171,8 @@ const rootRouteChildren: RootRouteChildren = {
     ProjectsProductAdoptionCustomerRetentionRoute,
   ProjectsStrategicBusinessTransformationRoute:
     ProjectsStrategicBusinessTransformationRoute,
+  ProjectsTransportationNetworkVolumeForecastingOptimisationRoute:
+    ProjectsTransportationNetworkVolumeForecastingOptimisationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
