@@ -56,6 +56,7 @@ const projects = [
     tools: ["AWS", "Power BI"],
     thumbnail: transportDashboardThumb.url,
     aspect: "aspect-[1065/596]",
+    to: "/projects/transportation-network-volume-forecasting-optimisation" as const,
   },
   {
     title: "Project Title",
