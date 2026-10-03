@@ -76,7 +76,7 @@ export function Hero() {
         </div>
 
         <div className="order-2 md:order-2">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-xl border border-border bg-surface shadow-soft">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden">
             <img
               src={portrait.url}
               alt="Portrait of Muhammad Monis"
