@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { KaggleIcon } from "@/components/portfolio/KaggleIcon";
 import { Button } from "@/components/ui/button";
+import portrait from "@/assets/portrait.png.asset.json";
 
 export function Hero() {
   return (
@@ -76,9 +77,11 @@ export function Hero() {
 
         <div className="order-2 md:order-2">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-xl border border-border bg-surface shadow-soft">
-            <div className="grid h-full w-full place-items-center text-sm text-muted-foreground">
-              Portrait placeholder
-            </div>
+            <img
+              src={portrait.url}
+              alt="Portrait of Muhammad Monis"
+              className="h-full w-full object-cover object-top"
+            />
           </div>
         </div>
       </div>
