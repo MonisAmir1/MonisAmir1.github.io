@@ -18,7 +18,7 @@ export function About() {
           value.
         </p>
         <p>
-          I enjoy solving business challenges by ⚡ <strong>automating</strong> ⚡ manual
+          I also enjoy solving business challenges by ⚡ <strong>automating</strong> ⚡ manual
           processes, reducing repetitive effort, and helping organizations save
           time and money.
         </p>
