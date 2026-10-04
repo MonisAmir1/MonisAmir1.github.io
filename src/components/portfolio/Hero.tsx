@@ -80,7 +80,8 @@ export function Hero() {
             <img
               src={portrait.url}
               alt="Portrait of Muhammad Monis"
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full object-cover"
+              style={{ objectPosition: "50% 25%" }}
             />
           </div>
         </div>
