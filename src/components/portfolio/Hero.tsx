@@ -81,7 +81,7 @@ export function Hero() {
               src={portrait.url}
               alt="Portrait of Muhammad Monis"
               className="h-full w-full object-cover"
-              style={{ objectPosition: "50% 25%" }}
+              style={{ objectPosition: "50% 25%", transform: "translateX(4%)" }}
             />
           </div>
         </div>
