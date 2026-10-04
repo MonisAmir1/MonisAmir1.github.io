@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { KaggleIcon } from "@/components/portfolio/KaggleIcon";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/portrait.png.asset.json";
+import portrait from "@/assets/portrait-2.png.asset.json";
 
 export function Hero() {
   return (
