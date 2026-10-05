@@ -7,6 +7,7 @@ import luxmoraThumb from "@/assets/dashboard-luxmora-fit.png.asset.json";
 import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.png.asset.json";
 import slaDashboardThumb from "@/assets/project-sla-dashboard.png.asset.json";
 import transportDashboardThumb from "@/assets/project-transport-dashboard.png.asset.json";
+import outagesDashboardThumb from "@/assets/project-outages-dashboard.png.asset.json";
 
 
 
@@ -63,6 +64,8 @@ const projects = [
     industry: "Industry",
     description: "Short description of the project, the business problem addressed, and the outcome delivered.",
     tools: ["Tool", "Tool", "Tool"],
+    thumbnail: outagesDashboardThumb.url,
+    aspect: "aspect-[1065/596]",
   },
 ];
 
