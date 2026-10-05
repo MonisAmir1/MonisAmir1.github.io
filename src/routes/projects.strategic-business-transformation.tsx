@@ -22,7 +22,7 @@ import transformationOptions from "@/assets/case2/transformation-options-table.p
 import recommendedPortfolio from "@/assets/case2/recommended-portfolio-table.jpg.asset.json";
 import daxMeasures from "@/assets/case2/dax-measures-list.png.asset.json";
 import daxCode from "@/assets/case2/dax-code.png.asset.json";
-import dashboardImage from "@/assets/case2/dashboard-executive.png.asset.json";
+import dashboardImage from "@/assets/case2/dashboard-executive-v2.png.asset.json";
 
 const TITLE = "Strategic Business Transformation";
 const DESCRIPTION =
