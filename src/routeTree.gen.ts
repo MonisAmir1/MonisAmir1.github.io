@@ -10,35 +10,21 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport } from './routes/projects.compliance-process-optimisation-operational-risk-monitoring'
-import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
-import { Route as ProjectsProductAdoptionCustomerRetentionRouteImport } from './routes/projects.product-adoption-customer-retention'
-import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
 import { Route as ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport } from './routes/projects.transportation-network-volume-forecasting-optimisation'
+import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
+import { Route as ProjectsProductAdoptionCustomerRetentionRouteImport } from './routes/projects.product-adoption-customer-retention'
+import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
+import { Route as ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport } from './routes/projects.compliance-process-optimisation-operational-risk-monitoring'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute =
-  ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport.update(
-    {
-      id: '/projects/compliance-process-optimisation-operational-risk-monitoring',
-      path: '/projects/compliance-process-optimisation-operational-risk-monitoring',
-      getParentRoute: () => rootRouteImport,
-    } as any,
-  )
-const ProjectsCostToIncomeRatioRoute =
-  ProjectsCostToIncomeRatioRouteImport.update({
-    id: '/projects/cost-to-income-ratio',
-    path: '/projects/cost-to-income-ratio',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ProjectsProductAdoptionCustomerRetentionRoute =
-  ProjectsProductAdoptionCustomerRetentionRouteImport.update({
-    id: '/projects/product-adoption-customer-retention',
-    path: '/projects/product-adoption-customer-retention',
+const ProjectsTransportationNetworkVolumeForecastingOptimisationRoute =
+  ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport.update({
+    id: '/projects/transportation-network-volume-forecasting-optimisation',
+    path: '/projects/transportation-network-volume-forecasting-optimisation',
     getParentRoute: () => rootRouteImport,
   } as any)
 const ProjectsStrategicBusinessTransformationRoute =
@@ -47,12 +33,26 @@ const ProjectsStrategicBusinessTransformationRoute =
     path: '/projects/strategic-business-transformation',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ProjectsTransportationNetworkVolumeForecastingOptimisationRoute =
-  ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport.update({
-    id: '/projects/transportation-network-volume-forecasting-optimisation',
-    path: '/projects/transportation-network-volume-forecasting-optimisation',
+const ProjectsProductAdoptionCustomerRetentionRoute =
+  ProjectsProductAdoptionCustomerRetentionRouteImport.update({
+    id: '/projects/product-adoption-customer-retention',
+    path: '/projects/product-adoption-customer-retention',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProjectsCostToIncomeRatioRoute =
+  ProjectsCostToIncomeRatioRouteImport.update({
+    id: '/projects/cost-to-income-ratio',
+    path: '/projects/cost-to-income-ratio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute =
+  ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport.update(
+    {
+      id: '/projects/compliance-process-optimisation-operational-risk-monitoring',
+      path: '/projects/compliance-process-optimisation-operational-risk-monitoring',
+      getParentRoute: () => rootRouteImport,
+    } as any,
+  )
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -124,25 +124,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/projects/compliance-process-optimisation-operational-risk-monitoring': {
-      id: '/projects/compliance-process-optimisation-operational-risk-monitoring'
-      path: '/projects/compliance-process-optimisation-operational-risk-monitoring'
-      fullPath: '/projects/compliance-process-optimisation-operational-risk-monitoring'
-      preLoaderRoute: typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/projects/cost-to-income-ratio': {
-      id: '/projects/cost-to-income-ratio'
-      path: '/projects/cost-to-income-ratio'
-      fullPath: '/projects/cost-to-income-ratio'
-      preLoaderRoute: typeof ProjectsCostToIncomeRatioRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/projects/product-adoption-customer-retention': {
-      id: '/projects/product-adoption-customer-retention'
-      path: '/projects/product-adoption-customer-retention'
-      fullPath: '/projects/product-adoption-customer-retention'
-      preLoaderRoute: typeof ProjectsProductAdoptionCustomerRetentionRouteImport
+    '/projects/transportation-network-volume-forecasting-optimisation': {
+      id: '/projects/transportation-network-volume-forecasting-optimisation'
+      path: '/projects/transportation-network-volume-forecasting-optimisation'
+      fullPath: '/projects/transportation-network-volume-forecasting-optimisation'
+      preLoaderRoute: typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects/strategic-business-transformation': {
@@ -152,11 +138,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsStrategicBusinessTransformationRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/projects/transportation-network-volume-forecasting-optimisation': {
-      id: '/projects/transportation-network-volume-forecasting-optimisation'
-      path: '/projects/transportation-network-volume-forecasting-optimisation'
-      fullPath: '/projects/transportation-network-volume-forecasting-optimisation'
-      preLoaderRoute: typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport
+    '/projects/product-adoption-customer-retention': {
+      id: '/projects/product-adoption-customer-retention'
+      path: '/projects/product-adoption-customer-retention'
+      fullPath: '/projects/product-adoption-customer-retention'
+      preLoaderRoute: typeof ProjectsProductAdoptionCustomerRetentionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/cost-to-income-ratio': {
+      id: '/projects/cost-to-income-ratio'
+      path: '/projects/cost-to-income-ratio'
+      fullPath: '/projects/cost-to-income-ratio'
+      preLoaderRoute: typeof ProjectsCostToIncomeRatioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/compliance-process-optimisation-operational-risk-monitoring': {
+      id: '/projects/compliance-process-optimisation-operational-risk-monitoring'
+      path: '/projects/compliance-process-optimisation-operational-risk-monitoring'
+      fullPath: '/projects/compliance-process-optimisation-operational-risk-monitoring'
+      preLoaderRoute: typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
