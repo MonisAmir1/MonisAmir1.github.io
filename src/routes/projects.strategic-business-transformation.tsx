@@ -84,13 +84,13 @@ const recommendations = [
       <>
         Implement a portfolio-wide revenue quality programme focused on strengthening pricing
         discipline, expanding premium offerings, and improving the value captured from existing
-        customer demand. Prioritise opportunities where LUXMORA can increase revenue per unit
+        customer demand. Prioritise opportunities where ABC Manufacturing Group can increase revenue per unit
         without relying on additional volume growth.
       </>
     ),
     rationale: (
       <>
-        The analysis showed that LUXMORA's revenue has continued to increase while unit volumes have
+        The analysis showed that ABC Manufacturing Group's revenue has continued to increase while unit volumes have
         declined, with revenue per unit becoming an increasingly important driver of growth. This
         indicates an opportunity to shift the portfolio toward higher-value revenue rather than
         relying primarily on volume expansion.
@@ -120,7 +120,7 @@ const recommendations = [
         those with weaker economic performance. Dish Care and Surface Care demonstrate strong demand
         and growth but remain below the median on economic quality, while Everyday Nutrition and
         Stress &amp; Wellbeing provide material value despite weaker growth. A targeted approach
-        allows LUXMORA to improve economics while protecting the contribution of mature value pools.
+        allows ABC Manufacturing Group to improve economics while protecting the contribution of mature value pools.
       </>
     ),
     outcomes: [
@@ -142,7 +142,7 @@ const recommendations = [
     ),
     rationale: (
       <>
-        The analysis showed that revenue growth is being achieved across LUXMORA's markets and
+        The analysis showed that revenue growth is being achieved across ABC Manufacturing Group's markets and
         customer segments despite declining unit volumes. However, the strength of growth and volume
         resilience varies across the portfolio, creating an opportunity to direct resources toward
         the markets and customer groups with stronger underlying performance rather than applying a
@@ -168,10 +168,10 @@ const recommendations = [
     ),
     rationale: (
       <>
-        Hair Care remains economically material to LUXMORA, but its growth, demand, and economic
+        Hair Care remains economically material to ABC Manufacturing Group, but its growth, demand, and economic
         quality are below the portfolio median. It also requires a relatively high investment,
         carries high execution risk, and has the longest implementation horizon among the
-        transformation options. A full upfront commitment would therefore expose LUXMORA to
+        transformation options. A full upfront commitment would therefore expose ABC Manufacturing Group to
         unnecessary capital risk.
       </>
     ),
@@ -204,7 +204,7 @@ const recommendations = [
     outcomes: [
       "Reduce resources committed to structurally weaker portfolio areas.",
       "Release capital and organisational capacity for higher-priority initiatives.",
-      "Improve the overall strategic efficiency of LUXMORA's portfolio without pursuing indiscriminate cost cutting.",
+      "Improve the overall strategic efficiency of ABC Manufacturing Group's portfolio without pursuing indiscriminate cost cutting.",
     ],
   },
 ];
@@ -338,7 +338,7 @@ function CaseStudyPage() {
         <CaseSection title="Executive Project Summary" reading>
           <Prose>
             <p>
-              LUXMORA, a fictional Luxembourg-based consumer goods company, was facing a strategic
+              ABC Manufacturing Group, a fictional Luxembourg-based consumer goods company, was facing a strategic
               inflection point as its established portfolio operated in an increasingly challenging
               growth environment. Management allocated a{" "}
               <B>€30M three-year transformation budget</B> and required a data-driven assessment of
@@ -353,7 +353,7 @@ function CaseStudyPage() {
                 strategic prioritisation
               </B>
               . The analysis was designed to move beyond headline performance and identify the
-              underlying patterns shaping LUXMORA's growth, demand, and economic performance.
+              underlying patterns shaping ABC Manufacturing Group's growth, demand, and economic performance.
             </p>
             <p>
               The findings were subsequently translated into a set of transformation options and an
@@ -376,7 +376,7 @@ function CaseStudyPage() {
         <CaseSection title="Business Context" reading>
           <Prose>
             <p>
-              LUXMORA is a fictional Luxembourg-based consumer goods company operating across three
+              ABC Manufacturing Group is a fictional Luxembourg-based consumer goods company operating across three
               divisions: <B>Personal Care &amp; Beauty, Household &amp; Home Care, and Consumer
               Wellness</B>. The company serves six European markets:{" "}
               <B>Germany, France, Switzerland, Belgium, the Netherlands, and Luxembourg</B>. Its
@@ -390,7 +390,7 @@ function CaseStudyPage() {
         <CaseSection title="Problem Statement & Business Challenge" reading>
           <Prose>
             <p>
-              LUXMORA has reached a <B>strategic inflection point</B>, requiring a more deliberate
+              ABC Manufacturing Group has reached a <B>strategic inflection point</B>, requiring a more deliberate
               approach to future growth and resource allocation. Management needs to determine which
               areas of the business should receive investment, which require transformation, and
               where resources may need to be reallocated.
@@ -408,7 +408,7 @@ function CaseStudyPage() {
         <CaseSection title="Why This Problem Matters" reading>
           <Prose>
             <p>
-              Without a clear view of where value is being created, protected, or eroded, LUXMORA
+              Without a clear view of where value is being created, protected, or eroded, ABC Manufacturing Group
               risks allocating resources based on historical performance rather than future
               strategic potential. This could lead to continued investment in lower-potential areas
               while underinvesting in opportunities capable of supporting sustainable growth and
@@ -424,7 +424,7 @@ function CaseStudyPage() {
           </p>
           <BulletList
             items={[
-              "Assess LUXMORA's portfolio performance and identify the key factors shaping its growth, demand, and economic performance.",
+              "Assess ABC Manufacturing Group's portfolio performance and identify the key factors shaping its growth, demand, and economic performance.",
               "Identify strategic opportunities and areas requiring transformation across categories, markets, and customer segments.",
               "Develop an evidence-based transformation portfolio and recommend how to allocate the €30M three-year transformation budget to support sustainable growth and long-term competitiveness.",
             ]}
@@ -438,7 +438,7 @@ function CaseStudyPage() {
           </p>
           <BulletList
             items={[
-              "Defining the analytical approach based on LUXMORA's strategic transformation challenge.",
+              "Defining the analytical approach based on ABC Manufacturing Group's strategic transformation challenge.",
               "Preparing, cleaning, and structuring multi-source business datasets using Excel and Power Query.",
               "Analysing portfolio, market, customer, and financial performance to identify areas of strategic opportunity and pressure.",
               "Translating analytical findings into evidence-based transformation priorities and actionable recommendations for management.",
@@ -468,7 +468,7 @@ function CaseStudyPage() {
                 The client provided five years (2021-2025) of historical sales and portfolio data
                 covering the performance and multiple portfolio and business dimensions. The
                 analysis followed a <B>structured, data-driven approach</B> designed to move from a
-                high-level assessment of LUXMORA's performance to a detailed understanding of
+                high-level assessment of ABC Manufacturing Group's performance to a detailed understanding of
                 portfolio economics and, ultimately, strategic prioritisation.
               </p>
             </Prose>
@@ -518,7 +518,7 @@ function CaseStudyPage() {
             <Insight title="Financial Diagnosis">
               <Prose>
                 <p>
-                  LUXMORA's net revenue increased from <B>€12.28M</B> in <B>2021</B> to{" "}
+                  ABC Manufacturing Group's net revenue increased from <B>€12.28M</B> in <B>2021</B> to{" "}
                   <B>€13.73M</B> in <B>2025</B>, while units sold declined from <B>942,697</B> to{" "}
                   <B>917,835</B>. Over the same period, revenue per unit increased from{" "}
                   <B>€13.03</B> to <B>€14.96</B>, indicating that top-line growth has been achieved
@@ -542,7 +542,7 @@ function CaseStudyPage() {
             <Insight title="Portfolio & Category Dynamics">
               <Prose>
                 <p>
-                  While LUXMORA's overall revenue growth appears relatively consistent,
+                  While ABC Manufacturing Group's overall revenue growth appears relatively consistent,
                   category-level analysis reveals substantially different growth mechanisms.{" "}
                   <B>Dish Care</B> combines strong revenue growth with positive unit growth, whereas{" "}
                   <B>Hair Care</B> has experienced significant volume contraction despite continued
@@ -709,7 +709,7 @@ function CaseStudyPage() {
                     portfolio pressure.
                   </p>
                   <p>
-                    The analysis therefore indicated that LUXMORA should not apply a uniform
+                    The analysis therefore indicated that ABC Manufacturing Group should not apply a uniform
                     investment approach across its portfolio. Resources should be differentiated
                     according to each category's strategic position.
                   </p>
@@ -781,7 +781,7 @@ function CaseStudyPage() {
             <Insight title="Market & Customer Dynamics for Resource Allocation">
               <Prose>
                 <p>
-                  The commercial analysis showed that LUXMORA's revenue growth is broadly
+                  The commercial analysis showed that ABC Manufacturing Group's revenue growth is broadly
                   distributed across its European markets and customer segments, despite declining
                   unit volumes in almost every case. Market revenue growth ranged from <B>9.79%</B>{" "}
                   in France to <B>15.66%</B> in Belgium, while customer-segment revenue growth
@@ -800,7 +800,7 @@ function CaseStudyPage() {
                   <B>Wellness-Oriented and Premium &amp; Conscious Consumers</B> represented the
                   faster-growing customer segments. This reinforced the case for selectively
                   reallocating resources toward commercially attractive markets and consumer groups
-                  rather than treating LUXMORA's entire footprint uniformly.
+                  rather than treating ABC Manufacturing Group's entire footprint uniformly.
                 </p>
               </Prose>
               <div className="mt-8">
@@ -872,7 +872,7 @@ function CaseStudyPage() {
             <Prose>
               <p>
                 The analysis identified six targeted transformation actions designed to strengthen
-                LUXMORA's growth trajectory while improving portfolio economics and resource
+                ABC Manufacturing Group's growth trajectory while improving portfolio economics and resource
                 allocation. Rather than pursuing broad-based investment across the portfolio, the
                 recommendations focus capital on the strongest opportunities while applying
                 selective and stage-gated approaches where the evidence indicates greater
@@ -935,7 +935,7 @@ function CaseStudyPage() {
         {/* Expected Business Impact */}
         <CaseSection title="Expected Business Impact" reading>
           <p className="mx-auto mb-6 max-w-[850px] text-base text-muted-foreground md:text-[17px]">
-            If the recommended transformation portfolio is successfully implemented, LUXMORA could
+            If the recommended transformation portfolio is successfully implemented, ABC Manufacturing Group could
             reasonably expect to achieve the following outcomes:
           </p>
           <BulletList
@@ -945,7 +945,7 @@ function CaseStudyPage() {
               <>Generate approximately €2.5M of modeled Year-3 net revenue impact across the <B>transformation portfolio</B>, based on the estimated impact of the selected initiatives.</>,
               <>Reallocate €23M of the €30M <B>transformation budget</B> toward priority initiatives while maintaining a <B>€7M uncommitted reserve</B> to fund emerging opportunities or scale initiatives that demonstrate stronger-than-expected results.</>,
               <><B>Release resources from structurally weaker portfolio areas</B>, particularly Home Fragrance and Laundry Care, while using targeted and stage-gated interventions for categories where the strategic case remains uncertain.</>,
-              <><B>Create a more balanced and resilient portfolio</B>, shifting LUXMORA's investment mix toward scalable growth platforms, stronger revenue economics, and opportunities with clearer strategic value.</>,
+              <><B>Create a more balanced and resilient portfolio</B>, shifting ABC Manufacturing Group's investment mix toward scalable growth platforms, stronger revenue economics, and opportunities with clearer strategic value.</>,
             ]}
           />
         </CaseSection>
