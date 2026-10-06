@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRouteImport } from './routes/projects.compliance-process-optimisation-operational-risk-monitoring'
 import { Route as ProjectsCostToIncomeRatioRouteImport } from './routes/projects.cost-to-income-ratio'
 import { Route as ProjectsProductAdoptionCustomerRetentionRouteImport } from './routes/projects.product-adoption-customer-retention'
+import { Route as ProjectsSatelliteNetworkPerformanceServiceReliabilityRouteImport } from './routes/projects.satellite-network-performance-service-reliability'
 import { Route as ProjectsStrategicBusinessTransformationRouteImport } from './routes/projects.strategic-business-transformation'
 import { Route as ProjectsTransportationNetworkVolumeForecastingOptimisationRouteImport } from './routes/projects.transportation-network-volume-forecasting-optimisation'
 
@@ -41,6 +42,12 @@ const ProjectsProductAdoptionCustomerRetentionRoute =
     path: '/projects/product-adoption-customer-retention',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute =
+  ProjectsSatelliteNetworkPerformanceServiceReliabilityRouteImport.update({
+    id: '/projects/satellite-network-performance-service-reliability',
+    path: '/projects/satellite-network-performance-service-reliability',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProjectsStrategicBusinessTransformationRoute =
   ProjectsStrategicBusinessTransformationRouteImport.update({
     id: '/projects/strategic-business-transformation',
@@ -59,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/projects/compliance-process-optimisation-operational-risk-monitoring': typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
+  '/projects/satellite-network-performance-service-reliability': typeof ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
   '/projects/transportation-network-volume-forecasting-optimisation': typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
@@ -67,6 +75,7 @@ export interface FileRoutesByTo {
   '/projects/compliance-process-optimisation-operational-risk-monitoring': typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
+  '/projects/satellite-network-performance-service-reliability': typeof ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
   '/projects/transportation-network-volume-forecasting-optimisation': typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
@@ -76,6 +85,7 @@ export interface FileRoutesById {
   '/projects/compliance-process-optimisation-operational-risk-monitoring': typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   '/projects/cost-to-income-ratio': typeof ProjectsCostToIncomeRatioRoute
   '/projects/product-adoption-customer-retention': typeof ProjectsProductAdoptionCustomerRetentionRoute
+  '/projects/satellite-network-performance-service-reliability': typeof ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute
   '/projects/strategic-business-transformation': typeof ProjectsStrategicBusinessTransformationRoute
   '/projects/transportation-network-volume-forecasting-optimisation': typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
@@ -86,6 +96,7 @@ export interface FileRouteTypes {
     | '/projects/compliance-process-optimisation-operational-risk-monitoring'
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
+    | '/projects/satellite-network-performance-service-reliability'
     | '/projects/strategic-business-transformation'
     | '/projects/transportation-network-volume-forecasting-optimisation'
   fileRoutesByTo: FileRoutesByTo
@@ -94,6 +105,7 @@ export interface FileRouteTypes {
     | '/projects/compliance-process-optimisation-operational-risk-monitoring'
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
+    | '/projects/satellite-network-performance-service-reliability'
     | '/projects/strategic-business-transformation'
     | '/projects/transportation-network-volume-forecasting-optimisation'
   id:
@@ -102,6 +114,7 @@ export interface FileRouteTypes {
     | '/projects/compliance-process-optimisation-operational-risk-monitoring'
     | '/projects/cost-to-income-ratio'
     | '/projects/product-adoption-customer-retention'
+    | '/projects/satellite-network-performance-service-reliability'
     | '/projects/strategic-business-transformation'
     | '/projects/transportation-network-volume-forecasting-optimisation'
   fileRoutesById: FileRoutesById
@@ -111,6 +124,7 @@ export interface RootRouteChildren {
   ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute: typeof ProjectsComplianceProcessOptimisationOperationalRiskMonitoringRoute
   ProjectsCostToIncomeRatioRoute: typeof ProjectsCostToIncomeRatioRoute
   ProjectsProductAdoptionCustomerRetentionRoute: typeof ProjectsProductAdoptionCustomerRetentionRoute
+  ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute: typeof ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute
   ProjectsStrategicBusinessTransformationRoute: typeof ProjectsStrategicBusinessTransformationRoute
   ProjectsTransportationNetworkVolumeForecastingOptimisationRoute: typeof ProjectsTransportationNetworkVolumeForecastingOptimisationRoute
 }
@@ -145,6 +159,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsProductAdoptionCustomerRetentionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/satellite-network-performance-service-reliability': {
+      id: '/projects/satellite-network-performance-service-reliability'
+      path: '/projects/satellite-network-performance-service-reliability'
+      fullPath: '/projects/satellite-network-performance-service-reliability'
+      preLoaderRoute: typeof ProjectsSatelliteNetworkPerformanceServiceReliabilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/strategic-business-transformation': {
       id: '/projects/strategic-business-transformation'
       path: '/projects/strategic-business-transformation'
@@ -169,6 +190,8 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectsCostToIncomeRatioRoute: ProjectsCostToIncomeRatioRoute,
   ProjectsProductAdoptionCustomerRetentionRoute:
     ProjectsProductAdoptionCustomerRetentionRoute,
+  ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute:
+    ProjectsSatelliteNetworkPerformanceServiceReliabilityRoute,
   ProjectsStrategicBusinessTransformationRoute:
     ProjectsStrategicBusinessTransformationRoute,
   ProjectsTransportationNetworkVolumeForecastingOptimisationRoute:
