@@ -66,6 +66,7 @@ const projects = [
     tools: ["SQL", "Power BI"],
     thumbnail: outagesDashboardThumb.url,
     aspect: "aspect-[1065/596]",
+    to: "/projects/satellite-network-performance-service-reliability" as const,
   },
 ];
 
