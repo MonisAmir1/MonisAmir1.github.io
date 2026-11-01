@@ -16,9 +16,16 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
   const [volume, setVolume] = useState(1);
   const [muted, setMuted] = useState(false);
 
+  const syncDuration = (video: HTMLVideoElement) => {
+    if (Number.isFinite(video.duration) && video.duration !== duration) {
+      setDuration(video.duration);
+    }
+  };
+
   const togglePlay = () => {
     const video = videoRef.current;
     if (!video) return;
+    syncDuration(video);
     if (video.paused) {
       void video.play();
     } else {
@@ -68,7 +75,10 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
-        onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
+        onTimeUpdate={(e) => {
+          setCurrentTime(e.currentTarget.currentTime);
+          syncDuration(e.currentTarget);
+        }}
         onLoadedMetadata={syncDuration}
         onDurationChange={syncDuration}
       >
