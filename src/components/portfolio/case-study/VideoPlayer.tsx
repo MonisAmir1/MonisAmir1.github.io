@@ -64,7 +64,8 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
         onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
-        onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+        onLoadedMetadata={syncDuration}
+        onDurationChange={syncDuration}
       >
         {title && <track kind="captions" label={title} />}
       </video>
