@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, PlayCircle } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Footer } from "@/components/portfolio/Footer";
 import profileImage from "@/assets/profile-navbar.png.asset.json";
 
