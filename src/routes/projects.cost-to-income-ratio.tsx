@@ -197,15 +197,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="card-surface !p-0 overflow-hidden">
-              <div className="grid aspect-video w-full place-items-center bg-surface">
-                <div className="flex flex-col items-center gap-3 px-6 text-center">
-                  <PlayCircle className="h-12 w-12 text-primary" />
-                  <p className="text-sm font-medium text-foreground">
-                    Project walkthrough video
-                  </p>
-                  <p className="text-xs text-muted-foreground">Coming soon</p>
-                </div>
-              </div>
+              <VideoPlayer src={walkthroughVideo.url} title="Project walkthrough video" />
             </div>
           </div>
         </section>
