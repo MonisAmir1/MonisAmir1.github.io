@@ -59,11 +59,6 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
     setMuted(video.muted);
   };
 
-  const syncDuration = (e: React.SyntheticEvent<HTMLVideoElement>) => {
-    const duration = e.currentTarget.duration;
-    if (Number.isFinite(duration)) setDuration(duration);
-  };
-
   return (
     <div className="group relative w-full overflow-hidden bg-black">
       <video
@@ -79,8 +74,8 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
           setCurrentTime(e.currentTarget.currentTime);
           syncDuration(e.currentTarget);
         }}
-        onLoadedMetadata={syncDuration}
-        onDurationChange={syncDuration}
+        onLoadedMetadata={(e) => syncDuration(e.currentTarget)}
+        onDurationChange={(e) => syncDuration(e.currentTarget)}
       >
         {title && <track kind="captions" label={title} />}
       </video>
