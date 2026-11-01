@@ -96,7 +96,7 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
           value={currentTime}
           onChange={(e) => seek(Number(e.target.value))}
           aria-label="Video timeline"
-          className="video-timeline h-1.5 w-full cursor-pointer flex-1 rounded-full"
+          className="video-timeline h-1.5 w-full cursor-pointer flex-1 rounded-full accent-white"
         />
         <span className="w-10 shrink-0 text-[11px] tabular-nums text-white/80">
           {formatTime(duration)}
@@ -121,7 +121,7 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
           value={muted ? 0 : volume}
           onChange={(e) => changeVolume(e.target.value)}
           aria-label="Volume"
-          className="video-volume hidden h-1 w-16 cursor-pointer rounded-full sm:block md:w-20"
+          className="video-volume hidden h-1 w-16 cursor-pointer rounded-full accent-white sm:block md:w-20"
         />
       </div>
     </div>
