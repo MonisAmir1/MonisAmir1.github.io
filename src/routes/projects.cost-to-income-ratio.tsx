@@ -5,6 +5,7 @@ import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
 import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Footer } from "@/components/portfolio/Footer";
 import profileImage from "@/assets/profile-navbar.png.asset.json";
+import walkthroughVideo from "@/assets/case1/walkthrough.mp4.asset.json";
 
 import dataModel from "@/assets/case1/data-model.png.asset.json";
 import ciTrend from "@/assets/case1/ci-trend-chart.png.asset.json";
