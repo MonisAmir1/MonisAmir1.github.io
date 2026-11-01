@@ -119,7 +119,7 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
           max={1}
           step={0.01}
           value={muted ? 0 : volume}
-          onChange={(e) => changeVolume(e.target.value)}
+          onChange={(e) => changeVolume(Number(e.target.value))}
           aria-label="Volume"
           className="video-volume hidden h-1 w-16 cursor-pointer rounded-full accent-white sm:block md:w-20"
         />
