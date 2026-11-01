@@ -1,9 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, PlayCircle } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Footer } from "@/components/portfolio/Footer";
 import profileImage from "@/assets/profile-navbar.png.asset.json";
+import walkthroughVideo from "@/assets/case1/walkthrough.mp4.asset.json";
 
 import dataModel from "@/assets/case1/data-model.png.asset.json";
 import ciTrend from "@/assets/case1/ci-trend-chart.png.asset.json";
@@ -196,15 +198,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="card-surface !p-0 overflow-hidden">
-              <div className="grid aspect-video w-full place-items-center bg-surface">
-                <div className="flex flex-col items-center gap-3 px-6 text-center">
-                  <PlayCircle className="h-12 w-12 text-primary" />
-                  <p className="text-sm font-medium text-foreground">
-                    Project walkthrough video
-                  </p>
-                  <p className="text-xs text-muted-foreground">Coming soon</p>
-                </div>
-              </div>
+              <VideoPlayer src={walkthroughVideo.url} title="Project walkthrough video" />
             </div>
           </div>
         </section>
