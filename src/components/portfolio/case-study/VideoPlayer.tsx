@@ -52,6 +52,11 @@ export function VideoPlayer({ src, title }: { src: string; title?: string }) {
     setMuted(video.muted);
   };
 
+  const syncDuration = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    const duration = e.currentTarget.duration;
+    if (Number.isFinite(duration)) setDuration(duration);
+  };
+
   return (
     <div className="group relative w-full overflow-hidden bg-black">
       <video
