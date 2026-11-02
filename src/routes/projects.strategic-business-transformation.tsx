@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { ExcelTables } from "@/components/portfolio/case-study/ExcelTables";
 import { Footer } from "@/components/portfolio/Footer";
