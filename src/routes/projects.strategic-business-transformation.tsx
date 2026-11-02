@@ -5,6 +5,7 @@ import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { ExcelTables } from "@/components/portfolio/case-study/ExcelTables";
 import { Footer } from "@/components/portfolio/Footer";
 import profileImage from "@/assets/profile-navbar.png.asset.json";
+import walkthroughVideo from "@/assets/case2/walkthrough.mp4.asset.json";
 
 import dataModel from "@/assets/case2/data-model.png.asset.json";
 import powerQuery from "@/assets/case2/power-query-steps.png.asset.json";
