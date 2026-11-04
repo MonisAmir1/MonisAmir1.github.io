@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Button } from "@/components/ui/button";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
@@ -21,6 +22,7 @@ import priorityEscalationQuery from "@/assets/case4/priority-escalation-query.pn
 import priorityEscalationOutput from "@/assets/case4/priority-escalation-output.png.asset.json";
 import daxMeasures from "@/assets/case4/dax-measures.png.asset.json";
 import executiveDashboard from "@/assets/case4/executive-dashboard.png.asset.json";
+import walkthroughVideo from "@/assets/case4/walkthrough.mp4.asset.json";
 
 const TITLE = "Compliance Process Optimisation & Operational Risk Monitoring";
 const DESCRIPTION = "Compliance and operational risk case study: using SQL and Power BI to diagnose workflow bottlenecks, SLA breach exposure, and remediation priorities across a fictional Luxembourg AIFM.";
