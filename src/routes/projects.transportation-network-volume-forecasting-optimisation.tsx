@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Button } from "@/components/ui/button";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
@@ -27,6 +28,7 @@ import forecastTrain from "@/assets/case5/forecast-code-train.png.asset.json";
 import forecastPredict from "@/assets/case5/forecast-code-predict.png.asset.json";
 import daxMeasures from "@/assets/case5/dax-measures.png.asset.json";
 import executiveDashboard from "@/assets/case5/executive-dashboard.png.asset.json";
+import walkthroughVideo from "@/assets/case5/walkthrough.mp4.asset.json";
 
 const TITLE = "Transportation Network Volume Forecasting & Optimisation";
 const DESCRIPTION = "Supply chain case study: forecasting daily transportation volumes and capacity risk across a European e-commerce network with AWS, Prophet, and Power BI.";
