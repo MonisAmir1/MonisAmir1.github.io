@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Button } from "@/components/ui/button";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
@@ -23,6 +24,7 @@ import causeQuery from "@/assets/case6/cause-query.png.asset.json";
 import causeOutput from "@/assets/case6/cause-output.png.asset.json";
 import daxMeasures from "@/assets/case6/dax-measures.png.asset.json";
 import executiveDashboard from "@/assets/case6/executive-dashboard.png.asset.json";
+import walkthroughVideo from "@/assets/case6/walkthrough.mp4.asset.json";
 
 const TITLE = "Satellite Network Performance & Service Reliability";
 const DESCRIPTION = "SpaceTech case study: analysing 24 months of satellite network outages, SLA breaches and customer impact with SQL Server and Power BI.";
@@ -109,7 +111,9 @@ function CaseStudyPage() {
         <section className="container-page py-14 md:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="fade-up"><p className="text-xs font-medium uppercase tracking-[0.18em] text-primary">SpaceTech <span className="mx-1.5 text-border">|</span> Space Defence</p><h1 className="mt-4 text-4xl leading-[1.1] text-foreground md:text-5xl" style={{ fontFamily: "'Garet', Inter, sans-serif" }}>{TITLE}</h1><div className="mt-7 flex flex-wrap gap-2"><span className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground">SQL</span><span className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground">Power BI</span></div></div>
-            <div className="card-surface overflow-hidden !p-0"><div className="grid aspect-video w-full place-items-center bg-surface"><div className="flex flex-col items-center gap-3 px-6 text-center"><PlayCircle className="h-12 w-12 text-primary" /><p className="text-sm font-medium text-foreground">Project walkthrough video</p><p className="text-xs text-muted-foreground">Coming soon</p></div></div></div>
+            <div className="card-surface !p-0 overflow-hidden">
+              <VideoPlayer src={walkthroughVideo.url} title="Project walkthrough video" />
+            </div>
           </div>
         </section>
 
