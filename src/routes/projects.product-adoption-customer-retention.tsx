@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Button } from "@/components/ui/button";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
@@ -24,6 +25,7 @@ import retentionQuery from "@/assets/case3/retention-query.png.asset.json";
 import retentionOutput from "@/assets/case3/retention-output.png.asset.json";
 import analyticalDatasets from "@/assets/case3/analytical-datasets.png.asset.json";
 import flowDashboard from "@/assets/case3/flow-dashboard.png.asset.json";
+import walkthroughVideo from "@/assets/case3/walkthrough.mp4.asset.json";
 
 const TITLE = "Product Adoption & Customer Retention";
 const DESCRIPTION = "FinTech case study: how Databricks product analytics identified the behavioural and segment factors shaping ABC Pay Flow adoption and retention.";
