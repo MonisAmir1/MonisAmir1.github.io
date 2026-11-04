@@ -105,7 +105,9 @@ function CaseStudyPage() {
         <section className="container-page py-14 md:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="fade-up"><p className="text-xs font-medium uppercase tracking-[0.18em] text-primary">Compliance <span className="mx-1.5 text-border">|</span> Regulatory <span className="mx-1.5 text-border">|</span> Risk</p><h1 className="mt-4 text-4xl leading-[1.1] text-foreground md:text-5xl" style={{ fontFamily: "'Garet', Inter, sans-serif" }}>{TITLE}</h1><div className="mt-7 flex flex-wrap gap-2"><span className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground">SQL</span><span className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs text-muted-foreground">Power BI</span></div></div>
-            <div className="card-surface overflow-hidden !p-0"><div className="grid aspect-video w-full place-items-center bg-surface"><div className="flex flex-col items-center gap-3 px-6 text-center"><PlayCircle className="h-12 w-12 text-primary" /><p className="text-sm font-medium text-foreground">Project walkthrough video</p><p className="text-xs text-muted-foreground">Coming soon</p></div></div></div>
+            <div className="card-surface !p-0 overflow-hidden">
+              <VideoPlayer src={walkthroughVideo.url} title="Project walkthrough video" />
+            </div>
           </div>
         </section>
 
