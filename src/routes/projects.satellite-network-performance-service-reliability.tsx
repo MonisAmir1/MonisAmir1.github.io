@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, ExternalLink, PlayCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Button } from "@/components/ui/button";
 import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfolio/case-study/CaseSection";
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
@@ -23,6 +24,7 @@ import causeQuery from "@/assets/case6/cause-query.png.asset.json";
 import causeOutput from "@/assets/case6/cause-output.png.asset.json";
 import daxMeasures from "@/assets/case6/dax-measures.png.asset.json";
 import executiveDashboard from "@/assets/case6/executive-dashboard.png.asset.json";
+import walkthroughVideo from "@/assets/case6/walkthrough.mp4.asset.json";
 
 const TITLE = "Satellite Network Performance & Service Reliability";
 const DESCRIPTION = "SpaceTech case study: analysing 24 months of satellite network outages, SLA breaches and customer impact with SQL Server and Power BI.";
