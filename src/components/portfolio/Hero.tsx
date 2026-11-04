@@ -68,7 +68,11 @@ export function Hero() {
               size="lg"
               className="rounded-xl bg-primary px-8 py-4 text-base text-primary-foreground hover:bg-primary/90"
             >
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://drive.google.com/file/d/1EZ98LrNF6T8fF5G1Wf2deQKjmlhDE_41/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View My Resume/CV
               </a>
             </Button>
