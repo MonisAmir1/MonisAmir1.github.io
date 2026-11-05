@@ -70,7 +70,7 @@ export function Hero() {
 
           <div className="mt-10">
             <TooltipProvider>
-              <Tooltip>
+              <Tooltip delayDuration={100}>
                 <TooltipTrigger asChild>
                   <Button
                     asChild
@@ -86,7 +86,12 @@ export function Hero() {
                     </a>
                   </Button>
                 </TooltipTrigger>
-                <TooltipContent side="bottom" align="start" sideOffset={10}>
+                <TooltipContent
+                  side="top"
+                  align="start"
+                  sideOffset={10}
+                  className="max-w-xs bg-foreground text-background"
+                >
                   This is a General CV. Not tailored to a specific role or
                   industry
                 </TooltipContent>
