@@ -1,5 +1,11 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { KaggleIcon } from "@/components/portfolio/KaggleIcon";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import portrait from "@/assets/portrait-2.png.asset.json";
 
