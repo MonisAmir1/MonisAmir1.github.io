@@ -69,19 +69,29 @@ export function Hero() {
 
 
           <div className="mt-10">
-            <Button
-              asChild
-              size="lg"
-              className="rounded-xl bg-primary px-8 py-4 text-base text-primary-foreground hover:bg-primary/90"
-            >
-              <a
-                href="https://drive.google.com/file/d/1EZ98LrNF6T8fF5G1Wf2deQKjmlhDE_41/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View My Resume/CV
-              </a>
-            </Button>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="rounded-xl bg-primary px-8 py-4 text-base text-primary-foreground hover:bg-primary/90"
+                  >
+                    <a
+                      href="https://drive.google.com/file/d/1EZ98LrNF6T8fF5G1Wf2deQKjmlhDE_41/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View My Resume/CV
+                    </a>
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent sideOffset={10}>
+                  This is a General CV. Not tailored to a specific role or
+                  industry
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </div>
 
