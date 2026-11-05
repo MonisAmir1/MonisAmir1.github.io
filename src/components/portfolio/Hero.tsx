@@ -86,7 +86,7 @@ export function Hero() {
                     </a>
                   </Button>
                 </TooltipTrigger>
-                <TooltipContent sideOffset={10}>
+                <TooltipContent side="bottom" align="start" sideOffset={10}>
                   This is a General CV. Not tailored to a specific role or
                   industry
                 </TooltipContent>
