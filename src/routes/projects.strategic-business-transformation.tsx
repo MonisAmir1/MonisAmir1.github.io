@@ -33,9 +33,9 @@ const DESCRIPTION =
 export const Route = createFileRoute("/projects/strategic-business-transformation")({
   head: () => ({
     meta: [
-      { title: "Strategic Business Transformation — Muhammad Monis" },
+      { title: `${TITLE} | Muhammad Monis Portfolio` },
       { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: "Strategic Business Transformation — Consulting Case Study" },
+      { property: "og:title", content: `${TITLE} | Muhammad Monis Portfolio` },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

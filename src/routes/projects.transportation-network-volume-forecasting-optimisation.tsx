@@ -36,9 +36,9 @@ const DESCRIPTION = "Supply chain case study: forecasting daily transportation v
 export const Route = createFileRoute("/projects/transportation-network-volume-forecasting-optimisation")({
   head: () => ({
     meta: [
-      { title: `${TITLE} — Muhammad Monis` },
+      { title: `${TITLE} | Muhammad Monis Portfolio` },
       { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: `${TITLE} — Supply Chain Case Study` },
+      { property: "og:title", content: `${TITLE} | Muhammad Monis Portfolio` },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -12,6 +12,16 @@ import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Muhammad Monis Portfolio" },
+      { name: "description", content: "Portfolio of Muhammad Monis — Data Analyst and Business Intelligence Analyst. Business-focused analytics case studies, dashboards, and reporting." },
+      { property: "og:title", content: "Muhammad Monis Portfolio" },
+      { property: "og:description", content: "Business-focused Data Analytics and Business Intelligence case studies by Muhammad Monis." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: HomePage,
 });
 

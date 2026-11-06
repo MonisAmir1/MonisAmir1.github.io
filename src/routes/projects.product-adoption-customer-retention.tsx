@@ -32,9 +32,9 @@ const DESCRIPTION = "FinTech case study: how Databricks product analytics identi
 
 export const Route = createFileRoute("/projects/product-adoption-customer-retention")({
   head: () => ({ meta: [
-    { title: "Product Adoption & Customer Retention — Muhammad Monis" },
+    { title: `${TITLE} | Muhammad Monis Portfolio` },
     { name: "description", content: DESCRIPTION },
-    { property: "og:title", content: "Product Adoption & Customer Retention — FinTech Case Study" },
+    { property: "og:title", content: `${TITLE} | Muhammad Monis Portfolio` },
     { property: "og:description", content: DESCRIPTION },
     { property: "og:type", content: "article" },
     { name: "twitter:card", content: "summary_large_image" },

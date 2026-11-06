@@ -66,6 +66,9 @@ jobs:
           done
           exit $missing
 
+      - name: Check page titles and local favicon paths
+        run: python3 github-pages/validate-branding.py
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client

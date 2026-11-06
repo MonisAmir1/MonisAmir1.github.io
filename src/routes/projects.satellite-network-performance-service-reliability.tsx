@@ -32,9 +32,9 @@ const DESCRIPTION = "SpaceTech case study: analysing 24 months of satellite netw
 export const Route = createFileRoute("/projects/satellite-network-performance-service-reliability")({
   head: () => ({
     meta: [
-      { title: `${TITLE} — Muhammad Monis` },
+      { title: `${TITLE} | Muhammad Monis Portfolio` },
       { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: `${TITLE} — SpaceTech Case Study` },
+      { property: "og:title", content: `${TITLE} | Muhammad Monis Portfolio` },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

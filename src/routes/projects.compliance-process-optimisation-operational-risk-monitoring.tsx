@@ -30,9 +30,9 @@ const DESCRIPTION = "Compliance and operational risk case study: using SQL and P
 export const Route = createFileRoute("/projects/compliance-process-optimisation-operational-risk-monitoring")({
   head: () => ({
     meta: [
-      { title: `${TITLE} — Muhammad Monis` },
+      { title: `${TITLE} | Muhammad Monis Portfolio` },
       { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: `${TITLE} — Compliance Case Study` },
+      { property: "og:title", content: `${TITLE} | Muhammad Monis Portfolio` },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

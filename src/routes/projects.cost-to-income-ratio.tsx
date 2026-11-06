@@ -32,9 +32,9 @@ const DESCRIPTION =
 export const Route = createFileRoute("/projects/cost-to-income-ratio")({
   head: () => ({
     meta: [
-      { title: "Cost-to-Income Ratio Optimisation — Muhammad Monis" },
+      { title: "Cost-to-Income Ratio Optimisation | Muhammad Monis Portfolio" },
       { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: "Cost-to-Income Ratio Optimisation — Banking Case Study" },
+      { property: "og:title", content: "Cost-to-Income Ratio Optimisation | Muhammad Monis Portfolio" },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

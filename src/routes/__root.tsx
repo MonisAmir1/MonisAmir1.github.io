@@ -78,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Muhammad Monis — Data Analyst & BI Portfolio" },
+      { title: "Muhammad Monis Portfolio" },
       {
         name: "description",
         content:
           "Portfolio of Muhammad Monis — Data Analyst and Business Intelligence Analyst. Business-focused analytics case studies, dashboards, and reporting.",
       },
       { name: "author", content: "Muhammad Monis" },
-      { property: "og:title", content: "Muhammad Monis — Data Analyst & BI Portfolio" },
+      { property: "og:title", content: "Muhammad Monis Portfolio" },
       {
         property: "og:description",
         content:
@@ -96,7 +96,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: `${import.meta.env.BASE_URL}favicon.ico`, type: "image/x-icon" },
+      { rel: "icon", href: `${import.meta.env.BASE_URL}favicon.ico`, type: "image/x-icon", sizes: "16x16 32x32 48x48" },
+      { rel: "icon", href: `${import.meta.env.BASE_URL}favicon-32x32.png`, type: "image/png", sizes: "32x32" },
+      { rel: "icon", href: `${import.meta.env.BASE_URL}favicon-16x16.png`, type: "image/png", sizes: "16x16" },
+      { rel: "apple-touch-icon", href: `${import.meta.env.BASE_URL}apple-touch-icon.png`, sizes: "180x180" },
+      { rel: "manifest", href: `${import.meta.env.BASE_URL}site.webmanifest` },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
