@@ -4,27 +4,27 @@ import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfoli
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
 import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Footer } from "@/components/portfolio/Footer";
-import profileImage from "@/assets/profile-navbar.png";
+import profileImage from "@/assets/profile-navbar.webp";
 import { MobileNavigation } from "@/components/portfolio/MobileNavigation";
 import walkthroughVideo from "@/assets/case1/walkthrough.mp4";
 
-import dataModel from "@/assets/case1/data-model.png";
-import ciTrend from "@/assets/case1/ci-trend-chart.png";
-import sql1q from "@/assets/case1/sql1-query.png";
-import sql1o from "@/assets/case1/sql1-output.png";
-import costBreakdown from "@/assets/case1/cost-breakdown-chart.png";
-import sql2q from "@/assets/case1/sql2-query.png";
-import sql2o from "@/assets/case1/sql2-output.png";
-import donutEarly from "@/assets/case1/dept-donut-early.png";
-import donutLate from "@/assets/case1/dept-donut-late.png";
-import sql3q from "@/assets/case1/sql3-query.png";
-import sql3o from "@/assets/case1/sql3-output.png";
-import slaMatrix from "@/assets/case1/sla-matrix.png";
-import sql4q from "@/assets/case1/sql4-query.png";
-import sql4o from "@/assets/case1/sql4-output.png";
-import reworkChart from "@/assets/case1/rework-chart.png";
-import sql5q from "@/assets/case1/sql5-query.png";
-import sql5o from "@/assets/case1/sql5-output.png";
+import dataModel from "@/assets/case1/data-model.webp";
+import ciTrend from "@/assets/case1/ci-trend-chart.webp";
+import sql1q from "@/assets/case1/sql1-query.webp";
+import sql1o from "@/assets/case1/sql1-output.webp";
+import costBreakdown from "@/assets/case1/cost-breakdown-chart.webp";
+import sql2q from "@/assets/case1/sql2-query.webp";
+import sql2o from "@/assets/case1/sql2-output.webp";
+import donutEarly from "@/assets/case1/dept-donut-early.webp";
+import donutLate from "@/assets/case1/dept-donut-late.webp";
+import sql3q from "@/assets/case1/sql3-query.webp";
+import sql3o from "@/assets/case1/sql3-output.webp";
+import slaMatrix from "@/assets/case1/sla-matrix.webp";
+import sql4q from "@/assets/case1/sql4-query.webp";
+import sql4o from "@/assets/case1/sql4-output.webp";
+import reworkChart from "@/assets/case1/rework-chart.webp";
+import sql5q from "@/assets/case1/sql5-query.webp";
+import sql5o from "@/assets/case1/sql5-output.webp";
 
 const TITLE = "Cost-to-Income Ratio Optimisation Through Operational Excellence";
 const DESCRIPTION =

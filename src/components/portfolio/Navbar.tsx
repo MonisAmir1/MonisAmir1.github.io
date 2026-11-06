@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profileImage from "@/assets/profile-navbar.png";
+import profileImage from "@/assets/profile-navbar.webp";
 import { MobileNavigation } from "@/components/portfolio/MobileNavigation";
 
 const links = [

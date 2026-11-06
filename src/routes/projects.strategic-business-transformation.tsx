@@ -4,28 +4,28 @@ import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfoli
 import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { ExcelTables } from "@/components/portfolio/case-study/ExcelTables";
 import { Footer } from "@/components/portfolio/Footer";
-import profileImage from "@/assets/profile-navbar.png";
+import profileImage from "@/assets/profile-navbar.webp";
 import { MobileNavigation } from "@/components/portfolio/MobileNavigation";
 import walkthroughVideo from "@/assets/case2/walkthrough.mp4";
 
-import dataModel from "@/assets/case2/data-model.png";
-import powerQuery from "@/assets/case2/power-query-steps.png";
-import excelQueries from "@/assets/case2/excel-queries.png";
-import revenueTrend from "@/assets/case2/revenue-units-trend.png";
-import yearlyFinancials from "@/assets/case2/yearly-financials-table.png";
-import kpiDeltas from "@/assets/case2/kpi-deltas.png";
-import categoryGrowth from "@/assets/case2/category-growth-table.png";
+import dataModel from "@/assets/case2/data-model.webp";
+import powerQuery from "@/assets/case2/power-query-steps.webp";
+import excelQueries from "@/assets/case2/excel-queries.webp";
+import revenueTrend from "@/assets/case2/revenue-units-trend.webp";
+import yearlyFinancials from "@/assets/case2/yearly-financials-table.webp";
+import kpiDeltas from "@/assets/case2/kpi-deltas.webp";
+import categoryGrowth from "@/assets/case2/category-growth-table.webp";
 import categoryEconomics from "@/assets/case2/category-economics-tables.png";
-import benchmarkTable from "@/assets/case2/benchmark-table.png";
-import strategicPositions from "@/assets/case2/strategic-positions-table.png";
-import marketCustomerCharts from "@/assets/case2/market-customer-charts.png";
-import rpuMarket from "@/assets/case2/rpu-market-table.png";
-import rpuSegment from "@/assets/case2/rpu-segment-table.png";
-import transformationOptions from "@/assets/case2/transformation-options-table.png";
-import recommendedPortfolio from "@/assets/case2/recommended-portfolio-table.jpg";
-import daxMeasures from "@/assets/case2/dax-measures-list.png";
-import daxCode from "@/assets/case2/dax-code.png";
-import dashboardImage from "@/assets/case2/dashboard-executive-v2.png";
+import benchmarkTable from "@/assets/case2/benchmark-table.webp";
+import strategicPositions from "@/assets/case2/strategic-positions-table.webp";
+import marketCustomerCharts from "@/assets/case2/market-customer-charts.webp";
+import rpuMarket from "@/assets/case2/rpu-market-table.webp";
+import rpuSegment from "@/assets/case2/rpu-segment-table.webp";
+import transformationOptions from "@/assets/case2/transformation-options-table.webp";
+import recommendedPortfolio from "@/assets/case2/recommended-portfolio-table.webp";
+import daxMeasures from "@/assets/case2/dax-measures-list.webp";
+import daxCode from "@/assets/case2/dax-code.webp";
+import dashboardImage from "@/assets/case2/dashboard-executive-v2.webp";
 
 const TITLE = "Strategic Business Transformation";
 const DESCRIPTION =

@@ -2,12 +2,12 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
-import dashboardThumb from "@/assets/project-cost-dashboard.png";
-import luxmoraThumb from "@/assets/dashboard-executive-thumb.png";
-import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.png";
-import slaDashboardThumb from "@/assets/project-sla-dashboard.png";
-import transportDashboardThumb from "@/assets/project-transport-dashboard.png";
-import outagesDashboardThumb from "@/assets/project-outages-dashboard.png";
+import dashboardThumb from "@/assets/project-cost-dashboard.webp";
+import luxmoraThumb from "@/assets/dashboard-executive-thumb.webp";
+import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.webp";
+import slaDashboardThumb from "@/assets/project-sla-dashboard.webp";
+import transportDashboardThumb from "@/assets/project-transport-dashboard.webp";
+import outagesDashboardThumb from "@/assets/project-outages-dashboard.webp";
 
 
 

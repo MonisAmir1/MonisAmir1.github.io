@@ -1,12 +1,12 @@
 import { Section } from "./Section";
-import excelAsset from "@/assets/skill-excel.png";
-import sqlAsset from "@/assets/skill-sql.png";
-import powerbiAsset from "@/assets/skill-powerbi.png";
-import tableauAsset from "@/assets/skill-tableau.png";
-import fabricAsset from "@/assets/skill-fabric.png";
-import databricksAsset from "@/assets/skill-databricks.png";
-import aiAsset from "@/assets/skill-ai.png";
-import awsAsset from "@/assets/skill-aws.png";
+import excelAsset from "@/assets/skill-excel.webp";
+import sqlAsset from "@/assets/skill-sql.webp";
+import powerbiAsset from "@/assets/skill-powerbi.webp";
+import tableauAsset from "@/assets/skill-tableau.webp";
+import fabricAsset from "@/assets/skill-fabric.webp";
+import databricksAsset from "@/assets/skill-databricks.webp";
+import aiAsset from "@/assets/skill-ai.webp";
+import awsAsset from "@/assets/skill-aws.webp";
 
 const tools = [
   { name: "Excel", src: excelAsset },
@@ -44,7 +44,7 @@ export function Skills() {
     <Section id="skills" title="Skills">
       <div className="mb-12 flex flex-wrap items-center justify-center gap-8 md:gap-12">
         {tools.map((t) => (
-          <img
+          <img loading="lazy"
             key={t.name}
             src={t.src}
             alt={t.name}

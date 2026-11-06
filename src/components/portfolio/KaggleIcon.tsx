@@ -1,4 +1,4 @@
-import kaggleLogo from "@/assets/kaggle.png";
+import kaggleLogo from "@/assets/kaggle.webp";
 
 export function KaggleIcon({ className }: { className?: string }) {
   return (

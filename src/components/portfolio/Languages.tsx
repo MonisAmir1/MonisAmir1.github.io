@@ -1,7 +1,7 @@
 import { Section } from "./Section";
-import flagUk from "@/assets/flag-uk.png";
-import flagFr from "@/assets/flag-fr.png";
-import flagLu from "@/assets/flag-lu.png";
+import flagUk from "@/assets/flag-uk.webp";
+import flagFr from "@/assets/flag-fr.webp";
+import flagLu from "@/assets/flag-lu.webp";
 
 const langs = [
   { name: "English", level: "C1", flags: [{ src: flagUk, alt: "UK flag" }] },
@@ -27,7 +27,7 @@ export function Languages() {
             <h3 className="flex items-center gap-1.5 text-lg font-semibold text-foreground">
               <span>{l.name}</span>
               {l.flags.map((f) => (
-                <img
+                <img loading="lazy"
                   key={f.alt}
                   src={f.src}
                   alt={f.alt}

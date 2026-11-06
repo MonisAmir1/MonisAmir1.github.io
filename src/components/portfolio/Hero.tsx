@@ -7,7 +7,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/portrait-2.png";
+import portrait from "@/assets/portrait-2.webp";
+import portraitSmall from "@/assets/portrait-2-480.webp";
 
 export function Hero() {
   return (
@@ -104,6 +105,10 @@ export function Hero() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden">
             <img
               src={portrait}
+              srcSet={`${portraitSmall} 480w, ${portrait} 800w`}
+              sizes="(min-width: 768px) 448px, 100vw"
+              fetchPriority="high"
+              decoding="async"
               alt="Portrait of Muhammad Monis"
               className="h-full w-full object-cover"
               style={{ objectPosition: "50% 25%", transform: "translateX(4%)" }}
