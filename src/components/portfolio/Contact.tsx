@@ -29,10 +29,38 @@ export function Contact() {
     defaultValues: { name: "", email: "", message: "" },
   });
 
-  const onSubmit = (values: Values) => {
-    console.log("contact submission", values);
-    toast.success("Message sent — I'll get back to you shortly.");
-    form.reset();
+  const onSubmit = async (values: Values) => {
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "d1f087e0-37cd-4b61-a356-3d577c642e35",
+          name: values.name,
+          email: values.email,
+          message: values.message,
+        }),
+      });
+      const result: { success?: boolean; message?: string } =
+        await response.json();
+
+      if (!response.ok || result.success !== true) {
+        toast.error(
+          result.message || "Unable to send your message. Please try again.",
+        );
+        return;
+      }
+
+      toast.success("Message sent — I'll get back to you shortly.");
+      form.reset();
+    } catch {
+      toast.error(
+        "Unable to send your message. Please check your connection and try again.",
+      );
+    }
   };
 
   return (
@@ -99,6 +127,7 @@ export function Contact() {
             <Button
               type="submit"
               size="lg"
+              disabled={form.formState.isSubmitting}
               className="rounded-xl bg-primary px-6 text-primary-foreground hover:bg-primary/90"
             >
               Send Message
