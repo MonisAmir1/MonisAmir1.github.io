@@ -2,12 +2,12 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { Section } from "./Section";
 import { Button } from "@/components/ui/button";
-import dashboardThumb from "@/assets/project-cost-dashboard.png.asset.json";
-import luxmoraThumb from "@/assets/dashboard-executive-thumb.png.asset.json";
-import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.png.asset.json";
-import slaDashboardThumb from "@/assets/project-sla-dashboard.png.asset.json";
-import transportDashboardThumb from "@/assets/project-transport-dashboard.png.asset.json";
-import outagesDashboardThumb from "@/assets/project-outages-dashboard.png.asset.json";
+import dashboardThumb from "@/assets/project-cost-dashboard.png";
+import luxmoraThumb from "@/assets/dashboard-executive-thumb.png";
+import flowAdoptionThumb from "@/assets/dashboard-flow-adoption.png";
+import slaDashboardThumb from "@/assets/project-sla-dashboard.png";
+import transportDashboardThumb from "@/assets/project-transport-dashboard.png";
+import outagesDashboardThumb from "@/assets/project-outages-dashboard.png";
 
 
 
@@ -17,7 +17,7 @@ const projects = [
     industry: "BANKING | FINANCIAL SERVICES",
     description: "Analysed the operational drivers behind an escalating Cost-to-Income Ratio and developed data-driven recommendations to improve banking efficiency.",
     tools: ["SQL", "Power BI"],
-    thumbnail: dashboardThumb.url,
+    thumbnail: dashboardThumb,
     aspect: "aspect-[1065/596]",
     to: "/projects/cost-to-income-ratio" as const,
   },
@@ -27,7 +27,7 @@ const projects = [
     industry: "CONSULTING | BIG 4",
     description: "Analysed the portfolio performance and growth dynamics to identify strategic transformation priorities and develop an evidence-based investment portfolio.",
     tools: ["Excel", "Power BI"],
-    thumbnail: luxmoraThumb.url,
+    thumbnail: luxmoraThumb,
     aspect: "aspect-[1065/596]",
     to: "/projects/strategic-business-transformation" as const,
   },
@@ -37,7 +37,7 @@ const projects = [
     industry: "FINTECH",
     description: "Analysed product adoption and customer behaviour to identify engagement barriers and develop evidence-based strategies to improve meaningful and sustained usage.",
     tools: ["Databricks"],
-    thumbnail: flowAdoptionThumb.url,
+    thumbnail: flowAdoptionThumb,
     aspect: "aspect-[1065/596]",
     to: "/projects/product-adoption-customer-retention" as const,
   },
@@ -46,7 +46,7 @@ const projects = [
     industry: "COMPLIANCE | REGULATORY | RISK",
     description: "Analysed operational lifecycles and control check bottlenecks across investor onboarding workflows to eliminate regulatory SLA breach risks and optimize operational capacity.",
     tools: ["SQL", "Power BI"],
-    thumbnail: slaDashboardThumb.url,
+    thumbnail: slaDashboardThumb,
     aspect: "aspect-[1065/596]",
     to: "/projects/compliance-process-optimisation-operational-risk-monitoring" as const,
   },
@@ -55,7 +55,7 @@ const projects = [
     industry: "SUPPLY CHAIN | LOGISTICS",
     description: "Analysed daily transportation volumes and capacity across a European e-commerce network, built a forecasting model, and developed data-driven recommendations to improve network planning and reduce operational risk.",
     tools: ["AWS", "Power BI"],
-    thumbnail: transportDashboardThumb.url,
+    thumbnail: transportDashboardThumb,
     aspect: "aspect-[1065/596]",
     to: "/projects/transportation-network-volume-forecasting-optimisation" as const,
   },
@@ -64,7 +64,7 @@ const projects = [
     industry: "SPACETECH | SPACE DEFENCE",
     description: "Analysed satellite network outages and service performance to identify reliability risks, customer impact, and opportunities to reduce service disruptions.",
     tools: ["SQL", "Power BI"],
-    thumbnail: outagesDashboardThumb.url,
+    thumbnail: outagesDashboardThumb,
     aspect: "aspect-[1065/596]",
     to: "/projects/satellite-network-performance-service-reliability" as const,
   },

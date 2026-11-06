@@ -4,26 +4,26 @@ import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfoli
 import { SqlAnalysis } from "@/components/portfolio/case-study/SqlAnalysis";
 import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { Footer } from "@/components/portfolio/Footer";
-import profileImage from "@/assets/profile-navbar.png.asset.json";
-import walkthroughVideo from "@/assets/case1/walkthrough.mp4.asset.json";
+import profileImage from "@/assets/profile-navbar.png";
+import walkthroughVideo from "@/assets/case1/walkthrough.mp4";
 
-import dataModel from "@/assets/case1/data-model.png.asset.json";
-import ciTrend from "@/assets/case1/ci-trend-chart.png.asset.json";
-import sql1q from "@/assets/case1/sql1-query.png.asset.json";
-import sql1o from "@/assets/case1/sql1-output.png.asset.json";
-import costBreakdown from "@/assets/case1/cost-breakdown-chart.png.asset.json";
-import sql2q from "@/assets/case1/sql2-query.png.asset.json";
-import sql2o from "@/assets/case1/sql2-output.png.asset.json";
-import donutEarly from "@/assets/case1/dept-donut-early.png.asset.json";
-import donutLate from "@/assets/case1/dept-donut-late.png.asset.json";
-import sql3q from "@/assets/case1/sql3-query.png.asset.json";
-import sql3o from "@/assets/case1/sql3-output.png.asset.json";
-import slaMatrix from "@/assets/case1/sla-matrix.png.asset.json";
-import sql4q from "@/assets/case1/sql4-query.png.asset.json";
-import sql4o from "@/assets/case1/sql4-output.png.asset.json";
-import reworkChart from "@/assets/case1/rework-chart.png.asset.json";
-import sql5q from "@/assets/case1/sql5-query.png.asset.json";
-import sql5o from "@/assets/case1/sql5-output.png.asset.json";
+import dataModel from "@/assets/case1/data-model.png";
+import ciTrend from "@/assets/case1/ci-trend-chart.png";
+import sql1q from "@/assets/case1/sql1-query.png";
+import sql1o from "@/assets/case1/sql1-output.png";
+import costBreakdown from "@/assets/case1/cost-breakdown-chart.png";
+import sql2q from "@/assets/case1/sql2-query.png";
+import sql2o from "@/assets/case1/sql2-output.png";
+import donutEarly from "@/assets/case1/dept-donut-early.png";
+import donutLate from "@/assets/case1/dept-donut-late.png";
+import sql3q from "@/assets/case1/sql3-query.png";
+import sql3o from "@/assets/case1/sql3-output.png";
+import slaMatrix from "@/assets/case1/sla-matrix.png";
+import sql4q from "@/assets/case1/sql4-query.png";
+import sql4o from "@/assets/case1/sql4-output.png";
+import reworkChart from "@/assets/case1/rework-chart.png";
+import sql5q from "@/assets/case1/sql5-query.png";
+import sql5o from "@/assets/case1/sql5-output.png";
 
 const TITLE = "Cost-to-Income Ratio Optimisation Through Operational Excellence";
 const DESCRIPTION =
@@ -152,7 +152,7 @@ function CaseStudyPage() {
         <nav className="container-page flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src={profileImage.url}
+              src={profileImage}
               alt="Monis profile"
               className="h-9 w-9 rounded-full border border-border bg-card object-cover"
             />
@@ -198,7 +198,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="card-surface !p-0 overflow-hidden">
-              <VideoPlayer src={walkthroughVideo.url} title="Project walkthrough video" />
+              <VideoPlayer src={walkthroughVideo} title="Project walkthrough video" />
             </div>
           </div>
         </section>
@@ -323,7 +323,7 @@ function CaseStudyPage() {
 
           <div className="mt-12">
             <h3 className="mb-5 text-center text-lg font-semibold text-foreground">Data Model</h3>
-            <Figure src={dataModel.url} alt="Star schema data model of the banking dataset" />
+            <Figure src={dataModel} alt="Star schema data model of the banking dataset" />
           </div>
 
           <div className="mx-auto mt-10 max-w-[850px]">
@@ -374,9 +374,9 @@ function CaseStudyPage() {
                 </p>
               </Prose>
               <div className="mt-8">
-                <Figure src={ciTrend.url} alt="Cost-to-Income Ratio trend from 2021 to 2025" />
+                <Figure src={ciTrend} alt="Cost-to-Income Ratio trend from 2021 to 2025" />
               </div>
-              <SqlAnalysis query={sql1q.url} output={sql1o.url} />
+              <SqlAnalysis query={sql1q} output={sql1o} />
             </Insight>
 
             <Insight title="Cost Structure Analysis">
@@ -393,9 +393,9 @@ function CaseStudyPage() {
                 </p>
               </Prose>
               <div className="mt-8">
-                <Figure src={costBreakdown.url} alt="Costs breakdown by year across cost categories" />
+                <Figure src={costBreakdown} alt="Costs breakdown by year across cost categories" />
               </div>
-              <SqlAnalysis query={sql2q.url} output={sql2o.url} />
+              <SqlAnalysis query={sql2q} output={sql2o} />
             </Insight>
 
             <Insight title="Departmental Cost Breakdown">
@@ -413,17 +413,17 @@ function CaseStudyPage() {
               </Prose>
               <div className="mt-8 grid gap-6 lg:grid-cols-2">
                 <Figure
-                  src={donutEarly.url}
+                  src={donutEarly}
                   alt="Average cost breakdown by department, 2021 and 2022"
                   caption="Filtered by 2021, 2022"
                 />
                 <Figure
-                  src={donutLate.url}
+                  src={donutLate}
                   alt="Average cost breakdown by department, 2023 to 2025"
                   caption="Filtered by 2023, 2024, 2025"
                 />
               </div>
-              <SqlAnalysis query={sql3q.url} output={sql3o.url} />
+              <SqlAnalysis query={sql3q} output={sql3o} />
             </Insight>
 
             <Insight title="Process Performance Drill-Down">
@@ -447,9 +447,9 @@ function CaseStudyPage() {
                 </p>
               </Prose>
               <div className="mt-8">
-                <Figure src={slaMatrix.url} alt="Average SLA variance in hours by process and year" />
+                <Figure src={slaMatrix} alt="Average SLA variance in hours by process and year" />
               </div>
-              <SqlAnalysis query={sql4q.url} output={sql4o.url} />
+              <SqlAnalysis query={sql4q} output={sql4o} />
             </Insight>
 
             <Insight title="Operational Efficiency Assessment">
@@ -470,9 +470,9 @@ function CaseStudyPage() {
                 </p>
               </Prose>
               <div className="mt-8">
-                <Figure src={reworkChart.url} alt="Total cases versus rework rate trend" />
+                <Figure src={reworkChart} alt="Total cases versus rework rate trend" />
               </div>
-              <SqlAnalysis query={sql5q.url} output={sql5o.url} />
+              <SqlAnalysis query={sql5q} output={sql5o} />
             </Insight>
 
             <Insight title="Root Cause & Conclusion">

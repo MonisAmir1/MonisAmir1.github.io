@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
-import profileImage from "@/assets/profile-navbar.png.asset.json";
+import profileImage from "@/assets/profile-navbar.png";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
 const links = [
@@ -54,7 +54,7 @@ export function Navbar() {
       <nav className="container-page flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
           <img
-            src={profileImage.url}
+            src={profileImage}
             alt="Monis profile"
             className="h-9 w-9 rounded-full border border-border object-cover bg-card"
           />

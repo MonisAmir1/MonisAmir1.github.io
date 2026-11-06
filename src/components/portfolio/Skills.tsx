@@ -1,22 +1,22 @@
 import { Section } from "./Section";
-import excelAsset from "@/assets/skill-excel.png.asset.json";
-import sqlAsset from "@/assets/skill-sql.png.asset.json";
-import powerbiAsset from "@/assets/skill-powerbi.png.asset.json";
-import tableauAsset from "@/assets/skill-tableau.png.asset.json";
-import fabricAsset from "@/assets/skill-fabric.png.asset.json";
-import databricksAsset from "@/assets/skill-databricks.png.asset.json";
-import aiAsset from "@/assets/skill-ai.png.asset.json";
-import awsAsset from "@/assets/skill-aws.png.asset.json";
+import excelAsset from "@/assets/skill-excel.png";
+import sqlAsset from "@/assets/skill-sql.png";
+import powerbiAsset from "@/assets/skill-powerbi.png";
+import tableauAsset from "@/assets/skill-tableau.png";
+import fabricAsset from "@/assets/skill-fabric.png";
+import databricksAsset from "@/assets/skill-databricks.png";
+import aiAsset from "@/assets/skill-ai.png";
+import awsAsset from "@/assets/skill-aws.png";
 
 const tools = [
-  { name: "Excel", src: excelAsset.url },
-  { name: "SQL", src: sqlAsset.url },
-  { name: "Power BI", src: powerbiAsset.url },
-  { name: "Tableau", src: tableauAsset.url },
-  { name: "Fabric", src: fabricAsset.url },
-  { name: "Databricks", src: databricksAsset.url },
-  { name: "AWS", src: awsAsset.url },
-  { name: "AI", src: aiAsset.url },
+  { name: "Excel", src: excelAsset },
+  { name: "SQL", src: sqlAsset },
+  { name: "Power BI", src: powerbiAsset },
+  { name: "Tableau", src: tableauAsset },
+  { name: "Fabric", src: fabricAsset },
+  { name: "Databricks", src: databricksAsset },
+  { name: "AWS", src: awsAsset },
+  { name: "AI", src: aiAsset },
 ];
 
 const groups = [

@@ -1,16 +1,16 @@
 import { Section } from "./Section";
-import flagUk from "@/assets/flag-uk.png.asset.json";
-import flagFr from "@/assets/flag-fr.png.asset.json";
-import flagLu from "@/assets/flag-lu.png.asset.json";
+import flagUk from "@/assets/flag-uk.png";
+import flagFr from "@/assets/flag-fr.png";
+import flagLu from "@/assets/flag-lu.png";
 
 const langs = [
-  { name: "English", level: "C1", flags: [{ src: flagUk.url, alt: "UK flag" }] },
+  { name: "English", level: "C1", flags: [{ src: flagUk, alt: "UK flag" }] },
   {
     name: "French",
     level: "B1",
     flags: [
-      { src: flagFr.url, alt: "France flag" },
-      { src: flagLu.url, alt: "Luxembourg flag" },
+      { src: flagFr, alt: "France flag" },
+      { src: flagLu, alt: "Luxembourg flag" },
     ],
   },
 ];

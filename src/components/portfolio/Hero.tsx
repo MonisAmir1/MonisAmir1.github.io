@@ -7,7 +7,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/portrait-2.png.asset.json";
+import portrait from "@/assets/portrait-2.png";
 
 export function Hero() {
   return (
@@ -103,7 +103,7 @@ export function Hero() {
         <div className="order-2 md:order-2">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden">
             <img
-              src={portrait.url}
+              src={portrait}
               alt="Portrait of Muhammad Monis"
               className="h-full w-full object-cover"
               style={{ objectPosition: "50% 25%", transform: "translateX(4%)" }}

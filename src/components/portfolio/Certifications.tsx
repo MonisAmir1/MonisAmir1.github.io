@@ -1,6 +1,6 @@
 import { Section } from "./Section";
-import msBadge from "@/assets/microsoft-certified-associate-badge.png.asset.json";
-import captureBadge from "@/assets/capture-badge.png.asset.json";
+import msBadge from "@/assets/microsoft-certified-associate-badge.png";
+import captureBadge from "@/assets/capture-badge.png";
 
 export function Certifications() {
   const items = [
@@ -35,7 +35,7 @@ export function Certifications() {
           >
             <div className="grid h-20 w-20 shrink-0 place-items-center rounded-xl bg-surface">
               <img
-                src={item.badge.url}
+                src={item.badge}
                 alt={item.badgeAlt}
                 className="h-[72px] w-[72px] object-contain"
               />

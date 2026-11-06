@@ -4,27 +4,27 @@ import { CaseSection, Prose, BulletList, Figure, B } from "@/components/portfoli
 import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { ExcelTables } from "@/components/portfolio/case-study/ExcelTables";
 import { Footer } from "@/components/portfolio/Footer";
-import profileImage from "@/assets/profile-navbar.png.asset.json";
-import walkthroughVideo from "@/assets/case2/walkthrough.mp4.asset.json";
+import profileImage from "@/assets/profile-navbar.png";
+import walkthroughVideo from "@/assets/case2/walkthrough.mp4";
 
-import dataModel from "@/assets/case2/data-model.png.asset.json";
-import powerQuery from "@/assets/case2/power-query-steps.png.asset.json";
-import excelQueries from "@/assets/case2/excel-queries.png.asset.json";
-import revenueTrend from "@/assets/case2/revenue-units-trend.png.asset.json";
-import yearlyFinancials from "@/assets/case2/yearly-financials-table.png.asset.json";
-import kpiDeltas from "@/assets/case2/kpi-deltas.png.asset.json";
-import categoryGrowth from "@/assets/case2/category-growth-table.png.asset.json";
-import categoryEconomics from "@/assets/case2/category-economics-tables.png.asset.json";
-import benchmarkTable from "@/assets/case2/benchmark-table.png.asset.json";
-import strategicPositions from "@/assets/case2/strategic-positions-table.png.asset.json";
-import marketCustomerCharts from "@/assets/case2/market-customer-charts.png.asset.json";
-import rpuMarket from "@/assets/case2/rpu-market-table.png.asset.json";
-import rpuSegment from "@/assets/case2/rpu-segment-table.png.asset.json";
-import transformationOptions from "@/assets/case2/transformation-options-table.png.asset.json";
-import recommendedPortfolio from "@/assets/case2/recommended-portfolio-table.jpg.asset.json";
-import daxMeasures from "@/assets/case2/dax-measures-list.png.asset.json";
-import daxCode from "@/assets/case2/dax-code.png.asset.json";
-import dashboardImage from "@/assets/case2/dashboard-executive-v2.png.asset.json";
+import dataModel from "@/assets/case2/data-model.png";
+import powerQuery from "@/assets/case2/power-query-steps.png";
+import excelQueries from "@/assets/case2/excel-queries.png";
+import revenueTrend from "@/assets/case2/revenue-units-trend.png";
+import yearlyFinancials from "@/assets/case2/yearly-financials-table.png";
+import kpiDeltas from "@/assets/case2/kpi-deltas.png";
+import categoryGrowth from "@/assets/case2/category-growth-table.png";
+import categoryEconomics from "@/assets/case2/category-economics-tables.png";
+import benchmarkTable from "@/assets/case2/benchmark-table.png";
+import strategicPositions from "@/assets/case2/strategic-positions-table.png";
+import marketCustomerCharts from "@/assets/case2/market-customer-charts.png";
+import rpuMarket from "@/assets/case2/rpu-market-table.png";
+import rpuSegment from "@/assets/case2/rpu-segment-table.png";
+import transformationOptions from "@/assets/case2/transformation-options-table.png";
+import recommendedPortfolio from "@/assets/case2/recommended-portfolio-table.jpg";
+import daxMeasures from "@/assets/case2/dax-measures-list.png";
+import daxCode from "@/assets/case2/dax-code.png";
+import dashboardImage from "@/assets/case2/dashboard-executive-v2.png";
 
 const TITLE = "Strategic Business Transformation";
 const DESCRIPTION =
@@ -277,7 +277,7 @@ function CaseStudyPage() {
         <nav className="container-page flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src={profileImage.url}
+              src={profileImage}
               alt="Monis profile"
               className="h-9 w-9 rounded-full border border-border bg-card object-cover"
             />
@@ -323,7 +323,7 @@ function CaseStudyPage() {
             </div>
 
             <div className="card-surface !p-0 overflow-hidden">
-              <VideoPlayer src={walkthroughVideo.url} title="Project walkthrough video" />
+              <VideoPlayer src={walkthroughVideo} title="Project walkthrough video" />
             </div>
           </div>
         </section>
@@ -453,7 +453,7 @@ function CaseStudyPage() {
 
           <div className="mt-12">
             <h3 className="mb-5 text-center text-lg font-semibold text-foreground">Data Model</h3>
-            <Figure src={dataModel.url} alt="Relational data model of the ABC Manufacturing Group dataset" />
+            <Figure src={dataModel} alt="Relational data model of the ABC Manufacturing Group dataset" />
           </div>
 
           <div className="mx-auto mt-10 max-w-[850px]">
@@ -493,7 +493,7 @@ function CaseStudyPage() {
                 Data Preparation in Power Query
               </h3>
               <Figure
-                src={powerQuery.url}
+                src={powerQuery}
                 alt="Power Query applied steps used to clean and transform the source data"
               />
             </div>
@@ -501,7 +501,7 @@ function CaseStudyPage() {
               <h3 className="mb-4 text-center text-lg font-semibold text-foreground">
                 Analytical Tables in Excel
               </h3>
-              <Figure src={excelQueries.url} alt="Queries list of the analytical tables in Excel" />
+              <Figure src={excelQueries} alt="Queries list of the analytical tables in Excel" />
             </div>
           </div>
         </CaseSection>
@@ -520,12 +520,12 @@ function CaseStudyPage() {
                 </p>
               </Prose>
               <Figure
-                src={revenueTrend.url}
+                src={revenueTrend}
                 alt="Net revenue versus units sold trend from 2021 to 2025"
               />
               <ExcelTables
-                left={yearlyFinancials.url}
-                right={kpiDeltas.url}
+                left={yearlyFinancials}
+                right={kpiDeltas}
                 leftLabel="Net Revenue, Units & Revenue per Unit"
                 rightLabel="Five-Year Movement"
                 leftAlt="Excel table of net revenue, units sold and revenue per unit by year"
@@ -555,7 +555,7 @@ function CaseStudyPage() {
               </Prose>
               <div className="mt-8">
                 <Figure
-                  src={categoryGrowth.url}
+                  src={categoryGrowth}
                   alt="Revenue, unit and revenue-per-unit growth by category"
                 />
               </div>
@@ -626,7 +626,7 @@ function CaseStudyPage() {
               </Prose>
               <div className="mt-8">
                 <Figure
-                  src={categoryEconomics.url}
+                  src={categoryEconomics}
                   alt="Operating contribution and contribution margin trends by category"
                 />
               </div>
@@ -682,7 +682,7 @@ function CaseStudyPage() {
                 </p>
               </Prose>
               <div className="mt-8">
-                <Figure src={benchmarkTable.url} alt="Portfolio benchmark median values" />
+                <Figure src={benchmarkTable} alt="Portfolio benchmark median values" />
               </div>
               <div className="mx-auto mt-8 max-w-[850px]">
                 <Prose>
@@ -711,7 +711,7 @@ function CaseStudyPage() {
               </div>
               <div className="mt-8">
                 <Figure
-                  src={strategicPositions.url}
+                  src={strategicPositions}
                   alt="Strategic position of each category across growth, demand and economics"
                 />
               </div>
@@ -799,13 +799,13 @@ function CaseStudyPage() {
               </Prose>
               <div className="mt-8">
                 <Figure
-                  src={marketCustomerCharts.url}
+                  src={marketCustomerCharts}
                   alt="Revenue and unit growth by market and by customer segment"
                 />
               </div>
               <ExcelTables
-                left={rpuMarket.url}
-                right={rpuSegment.url}
+                left={rpuMarket}
+                right={rpuSegment}
                 leftAlt="Excel table of revenue per unit trend by market"
                 rightAlt="Excel table of revenue per unit trend by customer segment"
               />
@@ -822,7 +822,7 @@ function CaseStudyPage() {
               </Prose>
               <div className="mt-8">
                 <Figure
-                  src={transformationOptions.url}
+                  src={transformationOptions}
                   alt="Transformation options assessed by impact, investment, risk and fit"
                 />
               </div>
@@ -852,7 +852,7 @@ function CaseStudyPage() {
               </div>
               <div className="mt-8">
                 <Figure
-                  src={recommendedPortfolio.url}
+                  src={recommendedPortfolio}
                   alt="Recommended portfolio transformation allocation table"
                 />
               </div>
@@ -988,13 +988,13 @@ function CaseStudyPage() {
               </ul>
               <div className="grid gap-4 sm:grid-cols-2">
                 <img
-                  src={daxMeasures.url}
+                  src={daxMeasures}
                   alt="Library of DAX measures created for the model"
                   loading="lazy"
                   className="w-full rounded-lg border border-border bg-surface"
                 />
                 <img
-                  src={daxCode.url}
+                  src={daxCode}
                   alt="Example DAX measure code"
                   loading="lazy"
                   className="w-full rounded-lg border border-border bg-surface"
@@ -1017,7 +1017,7 @@ function CaseStudyPage() {
                 ))}
               </ul>
               <img
-                src={dashboardImage.url}
+                src={dashboardImage}
                 alt="ABC Manufacturing Group Executive Overview Power BI dashboard"
                 loading="lazy"
                 className="w-full rounded-lg border border-border bg-surface"
@@ -1029,7 +1029,7 @@ function CaseStudyPage() {
         {/* Dashboard */}
         <CaseSection title="Dashboard">
           <Figure
-            src={dashboardImage.url}
+            src={dashboardImage}
             alt="ABC Manufacturing Group Executive Overview dashboard showing 2025 net revenue, units sold, revenue per unit, operating contribution margin and YoY revenue growth"
           />
           <div className="mt-6 flex justify-end">
