@@ -8,7 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GitHub Pages build only (set GITHUB_PAGES=true). The Lovable build is unchanged.
 const isGithubPages = process.env.GITHUB_PAGES === "true";
-const pagesBase = "/muhammad-monis-portfolio/";
+const pagesBase = "/Muhammad_Monis_Portfolio/";
 
 const staticPages = [
   "/",
