@@ -8,7 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GitHub Pages build only (set GITHUB_PAGES=true). The Lovable build is unchanged.
 const isGithubPages = process.env.GITHUB_PAGES === "true";
-const pagesBase = "/Muhammad_Monis_Portfolio/";
+const pagesBase = "/";
 
 const staticPages = [
   "/",
@@ -21,7 +21,7 @@ const staticPages = [
 ];
 
 export default defineConfig({
-  ...(isGithubPages ? { vite: { base: pagesBase }, nitro: false } : {}),
+  ...(isGithubPages ? { vite: { base: pagesBase, define: { "import.meta.env.VITE_GITHUB_PAGES": JSON.stringify("true") } }, nitro: false } : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this

@@ -10,5 +10,5 @@
 <!-- LOVABLE:END -->
 
 - Media lives in the repo under src/assets and is imported directly (no .asset.json/CDN imports), so the GitHub Pages copy has no Lovable-hosted dependency.
-- GitHub Pages build is opt-in via GITHUB_PAGES=true (base /Muhammad_Monis_Portfolio/, nitro off, prerender of the listed pages); new routes must be added to staticPages in vite.config.ts and the workflow page check.
+- GitHub Pages build is opt-in via GITHUB_PAGES=true (base / for the user site MonisAmir1.github.io, nitro off, prerender of the listed pages); new routes must be added to staticPages in vite.config.ts and the workflow page check.
 - Favicon formats are local files in public; shared head links use BASE_URL and manifest icon URLs stay relative so both hosting modes work.

@@ -56,13 +56,12 @@ jobs:
           if grep -rl "__l5e" dist/client --include=*.html --include=*.js; then
             echo "Found Lovable-hosted media references"; missing=1
           fi
-          base="/Muhammad_Monis_Portfolio"
+          base=""
           for html in $(find dist/client -name index.html); do
-            if ! grep -aq "$base/assets/[^\"]*\.css" "$html"; then echo "No stylesheet under $base in $html"; missing=1; fi
+            if ! grep -aq "$base/assets/[^\"]*\.css" "$html"; then echo "No stylesheet under /assets in $html"; missing=1; fi
             for ref in $(grep -aoE "$base/assets/[^\"]+\.(css|js)" "$html" | sort -u); do
               [ -f "dist/client${ref#$base}" ] || { echo "MISSING asset $ref ($html)"; missing=1; }
             done
-            if grep -aqE '(href|src)="/assets/' "$html"; then echo "Asset path without base in $html"; missing=1; fi
           done
           exit $missing
 

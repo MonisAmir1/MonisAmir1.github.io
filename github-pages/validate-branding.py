@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path("dist/client")
-BASE = "/Muhammad_Monis_Portfolio/"
+BASE = "/"
 PAGES = {
     "index.html": "Muhammad Monis Portfolio",
     "projects/cost-to-income-ratio/index.html": "Cost-to-Income Ratio Optimisation | Muhammad Monis Portfolio",
