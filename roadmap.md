@@ -1,5 +1,9 @@
 # Roadmap
 
+- [ ] Fix shared mobile navigation and use it on all seven pages without changing desktop navigation
+- [ ] Verify menu dismissal, section navigation, page transitions, refreshes, keyboard access, and mobile widths
+- [ ] Confirm production build through the available automated build checks
+
 - [x] Replace the website favicon with the uploaded portrait in local formats
 - [x] Update and verify the homepage and six case-study titles
 - [x] Verify base-aware icon references and add GitHub production branding validation

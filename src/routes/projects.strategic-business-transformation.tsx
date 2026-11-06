@@ -5,6 +5,7 @@ import { VideoPlayer } from "@/components/portfolio/case-study/VideoPlayer";
 import { ExcelTables } from "@/components/portfolio/case-study/ExcelTables";
 import { Footer } from "@/components/portfolio/Footer";
 import profileImage from "@/assets/profile-navbar.png";
+import { MobileNavigation } from "@/components/portfolio/MobileNavigation";
 import walkthroughVideo from "@/assets/case2/walkthrough.mp4";
 
 import dataModel from "@/assets/case2/data-model.png";
@@ -274,25 +275,26 @@ function CaseStudyPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-        <nav className="container-page flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
+        <nav className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 md:flex md:justify-between md:gap-0">
+          <Link to="/" className="flex min-w-0 items-center gap-3">
             <img
               src={profileImage}
               alt="Monis profile"
-              className="h-9 w-9 rounded-full border border-border bg-card object-cover"
+              className="h-9 w-9 shrink-0 rounded-full border border-border bg-card object-cover"
             />
-            <span className="text-sm font-semibold tracking-tight text-foreground">
+            <span className="truncate text-sm font-semibold tracking-tight text-foreground">
               Glad You're Here :)
             </span>
           </Link>
           <Link
             to="/"
             hash="projects"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+            className="hidden items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary md:inline-flex"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Portfolio
           </Link>
+          <MobileNavigation />
         </nav>
       </header>
 

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu } from "lucide-react";
 import profileImage from "@/assets/profile-navbar.png";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { MobileNavigation } from "@/components/portfolio/MobileNavigation";
 
 const links = [
   { href: "#about", label: "About" },
@@ -47,18 +46,17 @@ function useActiveSection() {
 
 export function Navbar() {
   const active = useActiveSection();
-  const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-      <nav className="container-page flex h-16 items-center justify-between">
-        <a href="#top" className="flex items-center gap-3">
+      <nav className="container-page grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 md:flex md:justify-between md:gap-0">
+        <a href="#top" className="flex min-w-0 items-center gap-3">
           <img
             src={profileImage}
             alt="Monis profile"
-            className="h-9 w-9 rounded-full border border-border object-cover bg-card"
+            className="h-9 w-9 shrink-0 rounded-full border border-border object-cover bg-card"
           />
-          <span className="text-sm font-semibold tracking-tight text-foreground">
+          <span className="truncate text-sm font-semibold tracking-tight text-foreground">
             Glad You're Here :)
           </span>
         </a>
@@ -83,30 +81,7 @@ export function Navbar() {
           })}
         </ul>
 
-        <div className="md:hidden">
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-border bg-card text-foreground">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Open menu</span>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-72">
-              <SheetTitle className="mb-6 text-base">Menu</SheetTitle>
-              <ul className="flex flex-col gap-4">
-                {links.map((l) => (
-                  <li key={l.href}>
-                    <a
-                      href={l.href}
-                      onClick={() => setOpen(false)}
-                      className="block rounded-md px-2 py-2 text-base text-foreground hover:bg-muted"
-                    >
-                      {l.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </SheetContent>
-          </Sheet>
-        </div>
+        <MobileNavigation />
 
         <div className="hidden md:block" />
       </nav>
