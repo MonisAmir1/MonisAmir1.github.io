@@ -59,7 +59,7 @@ export function Navbar() {
             className="h-9 w-9 rounded-full border border-border object-cover bg-card"
           />
           <span className="text-sm font-semibold tracking-tight text-foreground">
-            Monis Portfolio
+            Glad You're Here :)
           </span>
         </a>
 
