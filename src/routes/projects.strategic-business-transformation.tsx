@@ -28,7 +28,7 @@ import dashboardImage from "@/assets/case2/dashboard-executive-v2.png.asset.json
 
 const TITLE = "Strategic Business Transformation";
 const DESCRIPTION =
-  "Consulting case study: how Excel, Power Query and Power BI analysis of five years of portfolio data shaped an evidence-based €30M transformation portfolio for LUXMORA.";
+  "Consulting case study: how Excel, Power Query and Power BI analysis of five years of portfolio data shaped an evidence-based €30M transformation portfolio for ABC Manufacturing Group.";
 
 export const Route = createFileRoute("/projects/strategic-business-transformation")({
   head: () => ({
@@ -453,7 +453,7 @@ function CaseStudyPage() {
 
           <div className="mt-12">
             <h3 className="mb-5 text-center text-lg font-semibold text-foreground">Data Model</h3>
-            <Figure src={dataModel.url} alt="Relational data model of the LUXMORA dataset" />
+            <Figure src={dataModel.url} alt="Relational data model of the ABC Manufacturing Group dataset" />
           </div>
 
           <div className="mx-auto mt-10 max-w-[850px]">
@@ -1018,7 +1018,7 @@ function CaseStudyPage() {
               </ul>
               <img
                 src={dashboardImage.url}
-                alt="LUXMORA Executive Overview Power BI dashboard"
+                alt="ABC Manufacturing Group Executive Overview Power BI dashboard"
                 loading="lazy"
                 className="w-full rounded-lg border border-border bg-surface"
               />
@@ -1030,7 +1030,7 @@ function CaseStudyPage() {
         <CaseSection title="Dashboard">
           <Figure
             src={dashboardImage.url}
-            alt="LUXMORA Executive Overview dashboard showing 2025 net revenue, units sold, revenue per unit, operating contribution margin and YoY revenue growth"
+            alt="ABC Manufacturing Group Executive Overview dashboard showing 2025 net revenue, units sold, revenue per unit, operating contribution margin and YoY revenue growth"
           />
           <div className="mt-6 flex justify-end">
             <a
