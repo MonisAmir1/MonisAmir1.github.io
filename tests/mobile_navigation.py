@@ -22,7 +22,8 @@ async def closed(page):
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-        for width, height in [(int(os.environ.get("NAV_TEST_WIDTH", "390")), 568)]:
+        widths = [int(os.environ["NAV_TEST_WIDTH"])] if "NAV_TEST_WIDTH" in os.environ else [360, 375, 390, 414, 430]
+        for width, height in [(width, 568) for width in widths]:
             context = await browser.new_context(viewport={"width": width, "height": height}, has_touch=True)
             page = await context.new_page()
             for path in PAGES:
@@ -65,9 +66,8 @@ async def main():
             for path in PAGES[1:]:
                 await page.goto(ORIGIN + '/#projects', wait_until="domcontentloaded")
                 await page.locator(f'a[href="{path.rstrip("/")}"]').first.click()
-                await page.wait_for_url(ORIGIN + path.rstrip("/"))
-                await page.wait_for_timeout(300)
-                await page.wait_for_timeout(300)
+                await page.wait_for_url(lambda url: url.rstrip("/") == ORIGIN + path.rstrip("/"))
+                await page.wait_for_timeout(600)
                 await page.get_by_role("button", name="Open menu").click()
                 await page.get_by_role("dialog").get_by_role("link", name="Projects", exact=True).click()
                 await closed(page)
@@ -77,6 +77,7 @@ async def main():
             await page.set_viewport_size({"width": 1280, "height": 1800})
             await closed(page)
             assert not await page.get_by_role("button", name="Open menu").is_visible()
+            print(f"PASS {width}px: six homepage/project round trips and desktop scroll unlock")
             await context.close()
         await browser.close()
 
