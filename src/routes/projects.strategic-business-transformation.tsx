@@ -282,7 +282,7 @@ function CaseStudyPage() {
               className="h-9 w-9 rounded-full border border-border bg-card object-cover"
             />
             <span className="text-sm font-semibold tracking-tight text-foreground">
-              Monis Portfolio
+              Glad You're Here :)
             </span>
           </Link>
           <Link

@@ -96,7 +96,7 @@ function CaseStudyPage() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
         <nav className="container-page flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center gap-3"><img src={profileImage.url} alt="Monis profile" className="h-9 w-9 rounded-full border border-border bg-card object-cover" /><span className="text-sm font-semibold tracking-tight text-foreground">Monis Portfolio</span></Link>
+          <Link to="/" className="flex items-center gap-3"><img src={profileImage.url} alt="Monis profile" className="h-9 w-9 rounded-full border border-border bg-card object-cover" /><span className="text-sm font-semibold tracking-tight text-foreground">Glad You're Here :)</span></Link>
           <Link to="/" hash="projects" className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"><ArrowLeft className="h-4 w-4" />Back to Portfolio</Link>
         </nav>
       </header>
