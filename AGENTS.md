@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Media lives in the repo under src/assets and is imported directly (no .asset.json/CDN imports), so the GitHub Pages copy has no Lovable-hosted dependency.
+- GitHub Pages build is opt-in via GITHUB_PAGES=true (base /muhammad-monis-portfolio/, nitro off, prerender of the listed pages); new routes must be added to staticPages in vite.config.ts and the workflow page check.
